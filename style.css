@@ -242,17 +242,84 @@ footer img {
     transform: translateY(-100%);
 }
 
-/* Progress Line - Desktop Only */
+/* Progress Line - Fixed Top */
+.scroll-line {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: rgba(75, 111, 68, 0.1);
+    z-index: 2000;
+}
+
+.scroll-line-fill {
+    height: 100%;
+    width: 0%;
+    background: var(--secondary);
+    transition: width 0.1s linear;
+}
+
+/* Horizontal Scroll System (Desktop Only) */
 @media (min-width: 1024px) {
-    .scroll-line {
-        position: fixed;
-        left: 30px;
-        top: 20%;
-        height: 60%;
-        width: 1px;
-        background: rgba(75, 111, 68, 0.2);
-        z-index: 100;
+    .horizontal-wrapper {
+        position: relative;
+        height: 400vh; /* Determines how long the scroll is */
     }
+
+    .sticky-container {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        background: var(--bg-cream);
+    }
+
+    .horizontal-content {
+        display: flex;
+        flex-direction: row;
+        width: 300%; /* Adjust based on modules */
+        height: 100%;
+        will-change: transform;
+    }
+
+    .horizontal-module {
+        width: 100vw;
+        height: 100vh;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5% 10%;
+    }
+}
+
+/* Fallback for Mobile (Vertical) */
+@media (max-width: 1023px) {
+    .horizontal-wrapper {
+        height: auto !important;
+    }
+    .sticky-container {
+        position: relative !important;
+        height: auto !important;
+        overflow: visible !important;
+        display: block !important;
+    }
+    .horizontal-content {
+        flex-direction: column !important;
+        width: 100% !important;
+        transform: none !important;
+    }
+    .horizontal-module {
+        width: 100% !important;
+        height: auto !important;
+        padding: 60px 20px !important;
+    }
+}
+
 /* Contrast Fix for Dark Sections */
 section[style*="background: var(--primary)"] h2,
 section[style*="background: var(--primary)"] h3,
@@ -264,12 +331,6 @@ section[style*="background: var(--accent-brown)"] h3 {
     color: var(--white) !important;
 }
 
-.scroll-line-fill {
-    width: 100%;
-    height: 0%;
-    background: var(--secondary);
-    transition: height 0.1s linear;
-}
 
 
 

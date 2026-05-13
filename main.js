@@ -35,17 +35,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => revealObserver.observe(el));
 
-    // 3. Scroll Progress Line (Desktop Only)
+    // 3. Scroll Progress Logic (Top Bar)
     const scrollLineFill = document.querySelector('.scroll-line-fill');
-    if (scrollLineFill) {
-        window.addEventListener('scroll', () => {
-            const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrolled = (window.scrollY / windowHeight) * 100;
-            scrollLineFill.style.height = scrolled + '%';
-        });
-    }
+    const horizontalWrapper = document.querySelector('.horizontal-wrapper');
+    const horizontalContent = document.querySelector('.horizontal-content');
 
-    // 4. Navbar Scroll Effect
+    window.addEventListener('scroll', () => {
+        const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = (window.scrollY / windowHeight) * 100;
+        
+        if (scrollLineFill) {
+            scrollLineFill.style.width = scrolled + '%';
+        }
+
+        // 4. Horizontal Scroll Logic (Desktop Only)
+        if (window.innerWidth >= 1024 && horizontalWrapper && horizontalContent) {
+            const wrapperOffsetTop = horizontalWrapper.offsetTop;
+            const wrapperHeight = horizontalWrapper.offsetHeight;
+            const stickyHeight = window.innerHeight;
+            
+            // Calculate how much has been scrolled within the wrapper
+            let scrollProgress = (window.scrollY - wrapperOffsetTop) / (wrapperHeight - stickyHeight);
+            
+            // Clamp between 0 and 1
+            scrollProgress = Math.max(0, Math.min(1, scrollProgress));
+            
+            // Move the content (3 modules = 200% movement)
+            const movePercentage = scrollProgress * 200; 
+            horizontalContent.style.transform = `translateX(-${movePercentage}%)`;
+        }
+    });
+
+    // 5. Navbar Scroll Effect
     const nav = document.getElementById('main-nav');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
@@ -55,3 +76,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
