@@ -270,7 +270,7 @@ footer img {
 @media (min-width: 1024px) {
     .horizontal-wrapper {
         position: relative;
-        height: 500vh; /* 5 modules, 1 viewport height per module = natural speed */
+        height: 750vh; /* Slowed down: 1.5 viewport heights per module */
     }
 
     .sticky-container {
