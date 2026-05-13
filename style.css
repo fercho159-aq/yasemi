@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;700&display=swap');
+
+:root {
+    --primary: #4B6F44; /* Verde Aguacate */
+    --secondary: #8DA967; /* Verde Nopal */
+    --bg-cream: #F2F0E4;
+    --text-dark: #2C3A27;
+    --text-light: #F2F0E4;
+    --accent-brown: #4A3728;
+    --white: #FFFFFF;
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow: 0 10px 30px rgba(0,0,0,0.08);
+    --glass: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Outfit', sans-serif;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* Reusable Components */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    cursor: pointer;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-brown);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn-outline {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1000;
+    transition: var(--transition);
+    background: #F2F0E4; /* Solid background for better blend mode support */
+
+}
+
+nav.scrolled {
+    padding: 10px 0;
+    box-shadow: var(--shadow);
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    mix-blend-mode: darken;
+}
+
+.logo img {
+    height: 55px;
+    display: block;
+}
+
+
+
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.nav-links a.btn-primary {
+    color: var(--white) !important; /* Ensure button text is white */
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.nav-links a.btn-primary:hover {
+    color: var(--white) !important;
+}
+
+
+/* Floating WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Sections */
+section {
+    padding: 100px 0;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero h1 {
+    color: var(--white);
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+footer img {
+    height: 70px;
+    margin-bottom: 15px;
+    filter: invert(1) grayscale(1) brightness(2); /* White background -> Black; Logo -> White */
+    mix-blend-mode: screen; /* Black background -> Transparent */
+    display: block;
+}
+
+
+
+/* Contrast Fix for Dark Sections */
+section[style*="background: var(--primary)"] h2,
+section[style*="background: var(--primary)"] h3,
+section[style*="background: var(--text-dark)"] h2,
+section[style*="background: var(--text-dark)"] h3,
+section[style*="background: var(--accent-brown)"] h1,
+section[style*="background: var(--accent-brown)"] h2,
+section[style*="background: var(--accent-brown)"] h3 {
+    color: var(--white) !important;
+}
+
+
+
+/* Urgency Widget */
+.urgency-widget {
+    background: var(--accent-brown);
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
