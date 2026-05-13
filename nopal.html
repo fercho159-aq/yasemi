@@ -28,7 +28,16 @@
 </head>
 <body>
 
+    <div id="preloader">
+        <div class="counter">0%</div>
+    </div>
+
+    <div class="scroll-line">
+        <div class="scroll-line-fill"></div>
+    </div>
+
     <nav id="main-nav">
+
         <div class="container">
             <a href="index.html" class="logo">
                 <img src="iso-logo.jpeg" alt="Yasemi Logo" style="height: 50px;">
@@ -53,7 +62,8 @@
         </div>
     </header>
 
-    <section>
+    <section class="reveal">
+
         <div class="container">
             <div style="text-align: center; margin-bottom: 60px;">
                 <h2>Diferenciadores de Calidad</h2>
@@ -84,7 +94,8 @@
         </div>
     </section>
 
-    <section class="medical-section">
+    <section class="medical-section reveal">
+
         <div class="container">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
                 <div>
@@ -107,7 +118,8 @@
         </div>
     </section>
 
-    <section style="background: var(--bg-cream); text-align: center;">
+    <section class="reveal" style="background: var(--bg-cream); text-align: center;">
+
         <div class="container">
             <h2 style="margin-bottom: 30px;">Disponibilidad de Temporada</h2>
             <p style="margin-bottom: 40px;">Producimos nopal de alta calidad durante todo el año, con picos de cosecha de Marzo a Julio.</p>
@@ -144,15 +156,7 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script>
-        window.addEventListener('scroll', function() {
-            const nav = document.getElementById('main-nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
+
 </html>

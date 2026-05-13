@@ -36,7 +36,16 @@
 </head>
 <body>
 
+    <div id="preloader">
+        <div class="counter">0%</div>
+    </div>
+
+    <div class="scroll-line">
+        <div class="scroll-line-fill"></div>
+    </div>
+
     <nav id="main-nav">
+
         <div class="container">
             <a href="index.html" class="logo">
                 <img src="iso-logo.jpeg" alt="Yasemi Logo" style="height: 50px;">
@@ -61,7 +70,8 @@
         </div>
     </header>
 
-    <section>
+    <section class="reveal">
+
         <div class="container">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
                 <img src="avocado.png" alt="Detalle Aguacate" style="width: 100%; border-radius: 20px; box-shadow: var(--shadow);">
@@ -91,7 +101,8 @@
         </div>
     </section>
 
-    <section style="background: white;">
+    <section class="reveal" style="background: white;">
+
         <div class="container">
             <h2 style="text-align: center; margin-bottom: 50px;">Logística y Capacidad de Carga</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
@@ -126,7 +137,8 @@
         </div>
     </section>
 
-    <section style="background: var(--primary); color: white; text-align: center;">
+    <section class="reveal" style="background: var(--primary); color: white; text-align: center;">
+
         <div class="container">
             <h2 style="color: white; margin-bottom: 30px;">¿Necesita un empaque personalizado?</h2>
             <p style="margin-bottom: 40px; font-size: 1.1rem;">Desarrollamos soluciones de branding para su marca propia en cajas de 4kg, 10kg o 18kg.</p>
@@ -163,15 +175,7 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script>
-        window.addEventListener('scroll', function() {
-            const nav = document.getElementById('main-nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-        });
-    </script>
+    <script src="main.js"></script>
 </body>
+
 </html>

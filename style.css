@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;600;700&family=Space+Grotesk:wght@300;400;600;700&display=swap');
+
 
 :root {
     --primary: #4B6F44; /* Verde Aguacate */
@@ -28,10 +29,11 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Space Grotesk', sans-serif; /* High-end geometric font */
     color: var(--primary);
     font-weight: 700;
 }
+
 
 /* Reusable Components */
 .container {
@@ -192,6 +194,65 @@ footer img {
 
 
 
+/* Reveal Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    .reveal {
+        transform: translateY(20px); /* Subtle movement on mobile */
+    }
+}
+
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    color: var(--white);
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+#preloader .counter {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 6rem;
+    font-weight: 800;
+}
+
+#preloader.loaded {
+    transform: translateY(-100%);
+}
+
+/* Progress Line - Desktop Only */
+@media (min-width: 1024px) {
+    .scroll-line {
+        position: fixed;
+        left: 30px;
+        top: 20%;
+        height: 60%;
+        width: 1px;
+        background: rgba(75, 111, 68, 0.2);
+        z-index: 100;
+    }
 /* Contrast Fix for Dark Sections */
 section[style*="background: var(--primary)"] h2,
 section[style*="background: var(--primary)"] h3,
@@ -202,6 +263,15 @@ section[style*="background: var(--accent-brown)"] h2,
 section[style*="background: var(--accent-brown)"] h3 {
     color: var(--white) !important;
 }
+
+.scroll-line-fill {
+    width: 100%;
+    height: 0%;
+    background: var(--secondary);
+    transition: height 0.1s linear;
+}
+
+
 
 
 
