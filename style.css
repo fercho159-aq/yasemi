@@ -264,7 +264,7 @@ footer img {
 @media (min-width: 1024px) {
     .horizontal-wrapper {
         position: relative;
-        height: 400vh; /* Determines how long the scroll is */
+        height: 500vh; /* 4 modules * 125vh */
     }
 
     .sticky-container {
@@ -281,7 +281,7 @@ footer img {
     .horizontal-content {
         display: flex;
         flex-direction: row;
-        width: 300%; /* Adjust based on modules */
+        width: 400%; /* 4 modules */
         height: 100%;
         will-change: transform;
     }
@@ -293,9 +293,21 @@ footer img {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 5% 10%;
+        padding: 5% 12%; /* More spacious */
+    }
+
+    .horizontal-module h2 {
+        font-size: 4rem !important; /* Larger headings */
+        line-height: 1.1;
+        margin-bottom: 30px;
+    }
+
+    .horizontal-module p {
+        font-size: 1.4rem !important;
+        max-width: 800px;
     }
 }
+
 
 /* Fallback for Mobile (Vertical) */
 @media (max-width: 1023px) {

@@ -60,9 +60,10 @@ document.addEventListener('DOMContentLoaded', () => {
             // Clamp between 0 and 1
             scrollProgress = Math.max(0, Math.min(1, scrollProgress));
             
-            // Move the content (3 modules = 200% movement)
-            const movePercentage = scrollProgress * 200; 
+            // Move the content (4 modules = 300% movement)
+            const movePercentage = scrollProgress * 300; 
             horizontalContent.style.transform = `translateX(-${movePercentage}%)`;
+
         }
     });
 
