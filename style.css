@@ -266,86 +266,62 @@ footer img {
     transition: width 0.1s linear;
 }
 
-/* Horizontal Scroll System (Desktop Only) */
+/* Horizontal Scroll System (Desktop Only) - ROBUST DYNAMIC VERSION */
 @media (min-width: 1024px) {
-    .horizontal-wrapper {
+    /* El alto de este wrapper será seteado dinámicamente por JS */
+    .horizontal-scroll-wrapper {
         position: relative;
-        height: 600vh; /* 6 modules, 1:1 scroll ratio = no dead space */
+        width: 100%;
     }
 
-    .sticky-container {
+    .horizontal-scroll-sticky {
         position: sticky;
         top: 0;
         height: 100vh;
         width: 100vw;
         overflow: hidden;
-        display: flex;
-        align-items: center;
         background: var(--bg-cream);
     }
 
-    .horizontal-content {
+    .horizontal-scroll-track {
         display: flex;
-        flex-direction: row;
-        width: 600vw; /* 6 modules exactly */
         height: 100%;
+        width: max-content; /* Se adapta automáticamente al número de hijos */
         will-change: transform;
     }
 
-
-
-    .horizontal-module {
+    .h-module {
         width: 100vw;
         height: 100vh;
         flex-shrink: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        padding-top: 120px; /* Clear the header */
-        padding-bottom: 60px;
-    }
-
-
-    .horizontal-module .container {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
-
-    .horizontal-module h2 {
-        font-size: 3rem; /* Normalized size */
-        line-height: 1.2;
-        margin-bottom: 20px;
-    }
-
-    .horizontal-module p {
-        font-size: 1.2rem;
+        /* Padding superior para que no choque con el header */
+        padding: 100px 5% 0 5%;
     }
 }
 
-
-
 /* Fallback for Mobile (Vertical) */
 @media (max-width: 1023px) {
-    .horizontal-wrapper {
+    .horizontal-scroll-wrapper {
         height: auto !important;
     }
-    .sticky-container {
+    .horizontal-scroll-sticky {
         position: relative !important;
         height: auto !important;
         overflow: visible !important;
         display: block !important;
     }
-    .horizontal-content {
+    .horizontal-scroll-track {
         flex-direction: column !important;
         width: 100% !important;
         transform: none !important;
     }
-    .horizontal-module {
+    .h-module {
         width: 100% !important;
         height: auto !important;
-        padding: 60px 20px !important;
+        padding: 120px 20px 60px 20px !important;
     }
 }
 

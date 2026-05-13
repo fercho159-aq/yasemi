@@ -37,8 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 3. Scroll Progress Logic (Top Bar)
     const scrollLineFill = document.querySelector('.scroll-line-fill');
-    const horizontalWrapper = document.querySelector('.horizontal-wrapper');
-    const horizontalContent = document.querySelector('.horizontal-content');
 
     window.addEventListener('scroll', () => {
         const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -48,21 +46,33 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollLineFill.style.width = scrolled + '%';
         }
 
-        // 4. Horizontal Scroll Logic (Desktop Only)
-        if (window.innerWidth >= 1024 && horizontalWrapper && horizontalContent) {
+        // --- NUEVO SISTEMA HORIZONTAL ROBUSTO ---
+        const horizontalWrapper = document.getElementById('horizontal-wrapper');
+        const horizontalTrack = document.getElementById('horizontal-track');
+
+        if (window.innerWidth >= 1024 && horizontalWrapper && horizontalTrack) {
+            // 1. Calcular el ancho total a mover
+            const trackWidth = horizontalTrack.scrollWidth;
+            // 2. Ajustar la altura del wrapper para que 1px de scroll = 1px de movimiento
+            // Añadimos el viewportHeight para que el scroll termine exactamente cuando se vea el último pixel
+            horizontalWrapper.style.height = `${trackWidth}px`;
+
+            // 3. Variables para cálculo
             const wrapperOffsetTop = horizontalWrapper.offsetTop;
-            const wrapperHeight = horizontalWrapper.offsetHeight;
-            const stickyHeight = window.innerHeight;
+            const viewportHeight = window.innerHeight;
+            const maxScrollDistance = trackWidth - viewportHeight;
+            const maxMoveX = trackWidth - window.innerWidth;
+
+            // 4. Calcular el progreso
+            let scrollDistance = window.scrollY - wrapperOffsetTop;
+            let scrollProgress = scrollDistance / maxScrollDistance;
             
-            // Calculate how much has been scrolled within the wrapper
-            let scrollProgress = (window.scrollY - wrapperOffsetTop) / (wrapperHeight - stickyHeight);
-            
-            // Clamp between 0 and 1
+            // Limitar entre 0 y 1
             scrollProgress = Math.max(0, Math.min(1, scrollProgress));
             
-            // Move the content (6 modules = 500% movement)
-            const movePercentage = scrollProgress * 500; 
-            horizontalContent.style.transform = `translateX(-${movePercentage}%)`;
+            // 5. Mover exacto
+            const moveX = scrollProgress * maxMoveX; 
+            horizontalTrack.style.transform = `translateX(-${moveX}px)`;
 
         }
     });
