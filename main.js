@@ -53,14 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (window.innerWidth >= 1024 && horizontalWrapper && horizontalTrack) {
             // 1. Calcular el ancho total a mover
             const trackWidth = horizontalTrack.scrollWidth;
-            // 2. Ajustar la altura del wrapper para que 1px de scroll = 1px de movimiento
-            // Añadimos el viewportHeight para que el scroll termine exactamente cuando se vea el último pixel
-            horizontalWrapper.style.height = `${trackWidth}px`;
+            // 2. Ajustar la altura del wrapper para que el scroll sea más lento
+            // Multiplicamos por 1.5 para que el recorrido vertical sea más largo y suave
+            horizontalWrapper.style.height = `${trackWidth * 1.5}px`;
 
             // 3. Variables para cálculo
             const wrapperOffsetTop = horizontalWrapper.offsetTop;
             const viewportHeight = window.innerHeight;
-            const maxScrollDistance = trackWidth - viewportHeight;
+            const maxScrollDistance = (trackWidth * 1.5) - viewportHeight;
             const maxMoveX = trackWidth - window.innerWidth;
 
             // 4. Calcular el progreso
