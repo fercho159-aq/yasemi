@@ -270,7 +270,7 @@ footer img {
 @media (min-width: 1024px) {
     .horizontal-wrapper {
         position: relative;
-        height: 750vh; /* Slowed down: 1.5 viewport heights per module */
+        height: 800vh; /* 6 modules, 1.3 viewport heights per module */
     }
 
     .sticky-container {
@@ -287,10 +287,11 @@ footer img {
     .horizontal-content {
         display: flex;
         flex-direction: row;
-        width: 500vw; /* 5 modules exactly */
+        width: 600vw; /* 6 modules exactly */
         height: 100%;
         will-change: transform;
     }
+
 
 
     .horizontal-module {
