@@ -270,7 +270,7 @@ footer img {
 @media (min-width: 1024px) {
     .horizontal-wrapper {
         position: relative;
-        height: 800vh; /* 6 modules, 1.3 viewport heights per module */
+        height: 600vh; /* 6 modules, 1:1 scroll ratio = no dead space */
     }
 
     .sticky-container {
