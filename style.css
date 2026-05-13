@@ -264,7 +264,7 @@ footer img {
 @media (min-width: 1024px) {
     .horizontal-wrapper {
         position: relative;
-        height: 500vh; /* 4 modules * 125vh */
+        height: 800vh; /* 4 modules * 200vh for slower scroll */
     }
 
     .sticky-container {
@@ -293,20 +293,27 @@ footer img {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 5% 12%; /* More spacious */
+        align-items: center;
+        padding: 100px 5% 5% 5%; /* Top padding clears the header */
+    }
+
+    .horizontal-module .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .horizontal-module h2 {
-        font-size: 4rem !important; /* Larger headings */
-        line-height: 1.1;
-        margin-bottom: 30px;
+        font-size: 3rem; /* Normalized size */
+        line-height: 1.2;
+        margin-bottom: 20px;
     }
 
     .horizontal-module p {
-        font-size: 1.4rem !important;
-        max-width: 800px;
+        font-size: 1.2rem;
     }
 }
+
 
 
 /* Fallback for Mobile (Vertical) */
