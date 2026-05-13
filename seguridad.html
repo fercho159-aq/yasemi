@@ -3,47 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compra Segura (Escrow) | Yasemi S.A. de C.V.</title>
+    <title>Compra Segura | Yasemi S.A. de C.V.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .step-container {
+        .hero-internal {
+            height: 50vh;
             display: flex;
-            flex-direction: column;
-            gap: 40px;
-            margin: 60px 0;
-        }
-        .step {
-            display: flex;
-            gap: 30px;
             align-items: center;
-            background: white;
-            padding: 30px;
-            border-radius: 20px;
-            box-shadow: var(--shadow);
-            position: relative;
+            justify-content: center;
+            background: linear-gradient(rgba(44, 58, 39, 0.8), rgba(44, 58, 39, 0.8)), url('security_hero.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
         }
-        .step-number {
+        .hero-internal h1 {
+            color: white;
+            font-size: 3.5rem;
+        }
+
+        .trust-card {
+            background: white;
+            padding: 50px;
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+            border-top: 6px solid var(--secondary);
+            margin-bottom: 40px;
+            transition: var(--transition);
+        }
+
+        .trust-card:hover {
+            transform: scale(1.01);
+        }
+
+        .trust-card i {
+            font-size: 3.5rem;
+            color: var(--secondary);
+            margin-bottom: 25px;
+            display: block;
+        }
+
+        .step-badge {
+            width: 40px;
+            height: 40px;
             background: var(--primary);
             color: white;
-            width: 50px;
-            height: 50px;
             border-radius: 50%;
             display: flex;
-            justify-content: center;
             align-items: center;
-            font-weight: 800;
-            font-size: 1.5rem;
-            flex-shrink: 0;
+            justify-content: center;
+            font-weight: 700;
+            margin-bottom: 15px;
         }
-        .step:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            bottom: -40px;
-            left: 55px;
-            width: 2px;
-            height: 40px;
-            background: var(--secondary);
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 12px;
+            font-size: 1.1rem;
+        }
+
+        .checklist-item i {
+            color: var(--secondary);
         }
     </style>
 </head>
@@ -57,123 +81,113 @@
         <div class="scroll-line-fill"></div>
     </div>
 
-    <nav id="main-nav">
-
+    <nav id="main-nav" style="background: transparent; border-bottom: 1px solid rgba(255,255,255,0.1);">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo" style="filter: brightness(0) invert(1);">
                 <img src="iso-logo.jpeg" alt="Yasemi Logo" style="height: 50px;">
             </a>
             <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="aguacate.html">Aguacate Hass</a>
-                <a href="nopal.html">Nopal Verdura</a>
-                <a href="seguridad.html">Compra Segura</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px;">Cotizar</a>
+                <a href="index.html" style="color: white;">Inicio</a>
+                <a href="aguacate.html" style="color: white;">Aguacate Hass</a>
+                <a href="nopal.html" style="color: white;">Nopal Verdura</a>
+                <a href="seguridad.html" style="color: white; font-weight: 700;">Compra Segura</a>
+                <a href="nosotros.html" style="color: white;">Nosotros</a>
+                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px; background: white; color: var(--primary) !important;">Cotizar</a>
             </div>
         </div>
     </nav>
 
-    <header style="padding: 150px 0 80px; background: var(--accent-brown); color: white; text-align: center;">
+    <header class="hero-internal">
         <div class="container">
-            <h1 style="color: white;">Modelo de Compra Segura (Escrow)</h1>
-            <p style="font-size: 1.2rem; max-width: 700px; margin: 20px auto; color: #ddd;">
-                Eliminamos el riesgo financiero en transacciones internacionales mediante fideicomisos bancarios.
-            </p>
+            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; font-size: 0.9rem; color: var(--secondary);">Protocolos de Confianza</span>
+            <h1>Transparencia y Garantía en su Compra</h1>
         </div>
     </header>
 
     <section class="reveal">
-
-        <div class="container">
+        <div class="container" style="max-width: 900px;">
             <div style="text-align: center; margin-bottom: 60px;">
-                <h2>0% Riesgo, 100% Confianza</h2>
-                <p>Nuestra prioridad es la seguridad jurídica y financiera de nuestros clientes globales.</p>
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px;">¿Cómo garantizamos su inversión?</h2>
+                <p style="font-size: 1.2rem; color: #555;">En YASEMI, entendemos que la confianza es la base de cualquier relación comercial a largo plazo. Por ello, hemos implementado protocolos estrictos para cada etapa de la compra.</p>
             </div>
 
-            <div class="step-container">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div>
-                        <h3>Contrato y Depósito en Custodia</h3>
-                        <p>Tras acordar los términos, el comprador deposita el pago en una cuenta de fideicomiso bancario (Escrow) neutral. Yasemi no tiene acceso a los fondos aún.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div>
-                        <h3>Carga y Despacho Aduanal</h3>
-                        <p>Yasemi procesa el pedido, realiza la carga bajo supervisión técnica y despacha el contenedor con toda la documentación oficial (BL, Certificados Fitosanitarios).</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div>
-                        <h3>Verificación y Recepción</h3>
-                        <p>El cliente recibe el producto y valida la calidad pactada. En este punto, se emite la confirmación de recepción satisfactoria.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <div>
-                        <h3>Liberación de Fondos</h3>
-                        <p>Una vez confirmada la recepción, el banco libera los fondos a Yasemi. Transacción cerrada de forma segura para ambas partes.</p>
-                    </div>
-                </div>
+            <div class="trust-card">
+                <i class="fas fa-file-contract"></i>
+                <h3>Contratación Robusta</h3>
+                <p style="margin-bottom: 25px; font-size: 1.1rem; color: #444;">Nuestras operaciones están respaldadas por contratos internacionales claros, bajo Incoterms 2020, asegurando que ambas partes conozcan sus responsabilidades y riesgos.</p>
+                <div class="checklist-item"><i class="fas fa-check-circle"></i> Asesoría legal especializada</div>
+                <div class="checklist-item"><i class="fas fa-check-circle"></i> Seguros de carga contra todo riesgo</div>
+                <div class="checklist-item"><i class="fas fa-check-circle"></i> Documentación fitosanitaria al día</div>
             </div>
 
-            <div style="background: var(--bg-cream); padding: 40px; border-radius: 20px; border-left: 10px solid var(--primary); margin-top: 50px;">
-                <h3 style="margin-bottom: 15px;">Seguridad Jurídica y Póliza de Fianza</h3>
-                <p>Contamos con el respaldo de instituciones financieras líderes en México para garantizar que cada operación esté protegida legalmente. Esto garantiza que su inversión esté segura desde el primer contacto hasta la entrega final.</p>
+            <div class="trust-card">
+                <i class="fas fa-user-shield"></i>
+                <h3>Verificación en Origen</h3>
+                <p style="margin-bottom: 25px; font-size: 1.1rem; color: #444;">Usted tiene la tranquilidad de que el producto es real y cumple con lo prometido antes de que salga del contenedor.</p>
+                <div class="checklist-item"><i class="fas fa-check-circle"></i> Inspección por terceros (SGS / GlobalGAP)</div>
+                <div class="checklist-item"><i class="fas fa-check-circle"></i> Reportes fotográficos y video en tiempo real del empaque</div>
+                <div class="checklist-item"><i class="fas fa-check-circle"></i> Auditoría de lotes por ingenieros agrónomos</div>
+            </div>
+
+            <div class="trust-card">
+                <i class="fas fa-credit-card"></i>
+                <h3>Pasarelas de Pago Seguras</h3>
+                <p style="margin-bottom: 25px; font-size: 1.1rem; color: #444;">Manejamos transferencias bancarias internacionales (SWIFT) y Cartas de Crédito irrevocables para operaciones de gran escala.</p>
+                <div class="checklist-item"><i class="fas fa-check-circle"></i> Cuentas corporativas verificadas en México</div>
+                <div class="checklist-item"><i class="fas fa-check-circle"></i> Transparencia total en costos logísticos y aranceles</div>
             </div>
         </div>
     </section>
 
-    <section class="reveal" style="background: white; text-align: center;">
-
-        <div class="container">
-            <h2 style="margin-bottom: 30px;">Preguntas Frecuentes sobre Exportación</h2>
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; text-align: left; margin-top: 40px;">
-                <div style="padding: 20px; border-bottom: 1px solid #eee;">
-                    <h4 style="margin-bottom: 10px;">¿Qué bancos manejan el fideicomiso?</h4>
-                    <p style="color: #666; font-size: 0.95rem;">Trabajamos con BBVA y Banorte en México, permitiendo integraciones con los principales bancos internacionales en USA, Europa y Asia.</p>
+    <section class="reveal" style="background: var(--primary); color: white; border-radius: 100px 100px 0 0;">
+        <div class="container" style="text-align: center;">
+            <h2 style="color: white; font-size: 3rem; margin-bottom: 30px;">Nuestro Proceso de 4 Pasos</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 60px;">
+                <div>
+                    <div class="step-badge" style="background: white; color: var(--primary); margin: 0 auto 20px;">1</div>
+                    <h4 style="color: white; margin-bottom: 10px;">Cotización y Muestreo</h4>
+                    <p style="opacity: 0.8; font-size: 0.9rem;">Definimos calibres, volumen y enviamos muestras si es necesario.</p>
                 </div>
-                <div style="padding: 20px; border-bottom: 1px solid #eee;">
-                    <h4 style="margin-bottom: 10px;">¿Quién cubre el costo del Escrow?</h4>
-                    <p style="color: #666; font-size: 0.95rem;">Generalmente se divide al 50% entre comprador y vendedor para asegurar neutralidad, o se pacta según el volumen del contrato.</p>
+                <div>
+                    <div class="step-badge" style="background: white; color: var(--primary); margin: 0 auto 20px;">2</div>
+                    <h4 style="color: white; margin-bottom: 10px;">Cierre y Contrato</h4>
+                    <p style="opacity: 0.8; font-size: 0.9rem;">Formalización legal y pago inicial de garantía.</p>
                 </div>
-                <div style="padding: 20px; border-bottom: 1px solid #eee;">
-                    <h4 style="margin-bottom: 10px;">¿Cómo se manejan los reclamos de calidad?</h4>
-                    <p style="color: #666; font-size: 0.95rem;">El fideicomiso incluye una cláusula de inspección en destino. En caso de discrepancia, se activa un peritaje independiente antes de la liberación de fondos.</p>
+                <div>
+                    <div class="step-badge" style="background: white; color: var(--primary); margin: 0 auto 20px;">3</div>
+                    <h4 style="color: white; margin-bottom: 10px;">Producción y Empaque</h4>
+                    <p style="opacity: 0.8; font-size: 0.9rem;">Corte fresco y embalaje según especificaciones del cliente.</p>
                 </div>
-                <div style="padding: 20px; border-bottom: 1px solid #eee;">
-                    <h4 style="margin-bottom: 10px;">¿Exportan a cualquier país?</h4>
-                    <p style="color: #666; font-size: 0.95rem;">Exportamos a cualquier mercado que cuente con protocolos fitosanitarios vigentes con México, incluyendo USA, Canadá, Unión Europea, Japón y China.</p>
+                <div>
+                    <div class="step-badge" style="background: white; color: var(--primary); margin: 0 auto 20px;">4</div>
+                    <h4 style="color: white; margin-bottom: 10px;">Exportación y Seguimiento</h4>
+                    <p style="opacity: 0.8; font-size: 0.9rem;">Despacho aduanal y monitoreo hasta destino final.</p>
                 </div>
             </div>
+            <a href="nosotros.html#contacto" class="btn" style="margin-top: 60px; background: var(--secondary); color: white; padding: 20px 40px;">Solicitar Auditoría de Compra</a>
         </div>
     </section>
 
-    <footer style="background: var(--text-dark); color: white; padding: 50px 0;">
+    <footer style="background: var(--text-dark); color: white; padding: 80px 0 40px;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 60px;">
                 <div>
-                    <img src="iso-logo.jpeg" alt="Yasemi Logo">
-                    <h3 style="color: white; margin-bottom: 10px;">YASEMI S.A. de C.V.</h3>
-                    <p>Exportación agroindustrial de alto impacto.</p>
+                    <img src="iso-logo.jpeg" alt="Yasemi Logo" style="filter: brightness(0) invert(1); margin-bottom: 20px;">
+                    <h3 style="color: white; margin-bottom: 15px;">YASEMI S.A. de C.V.</h3>
+                    <p style="opacity: 0.7;">Líderes en la exportación de productos agrícolas mexicanos de calidad premium.</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 15px;">Enlaces</h4>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Productos</h4>
                     <ul style="list-style: none;">
-                        <li><a href="index.html" style="color: white; text-decoration: none;">Inicio</a></li>
-                        <li><a href="aguacate.html" style="color: white; text-decoration: none;">Aguacate Hass</a></li>
-                        <li><a href="nopal.html" style="color: white; text-decoration: none;">Nopal Verdura</a></li>
+                        <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;">Aguacate Hass</a></li>
+                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;">Nopal Verdura</a></li>
+                        <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;">Compra Segura</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 15px;">Contacto</h4>
-                    <p>CDMX, Colonia Cuauhtémoc</p>
-                    <p>info@yasemi.com.mx</p>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Contacto</h4>
+                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i>CDMX, México</p>
+                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--secondary);"></i>info@yasemi.com.mx</p>
                 </div>
             </div>
         </div>
@@ -184,6 +198,31 @@
     </a>
 
     <script src="main.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'white';
+                nav.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+                document.querySelectorAll('.nav-links a').forEach(a => a.style.color = '#2C3A27');
+                document.querySelector('.logo').style.filter = 'none';
+                const btn = document.querySelector('.nav-links .btn-primary');
+                if(btn) {
+                    btn.style.background = 'var(--primary)';
+                    btn.style.color = 'white';
+                }
+            } else {
+                nav.style.background = 'transparent';
+                nav.style.boxShadow = 'none';
+                document.querySelectorAll('.nav-links a').forEach(a => a.style.color = 'white');
+                document.querySelector('.logo').style.filter = 'brightness(0) invert(1)';
+                const btn = document.querySelector('.nav-links .btn-primary');
+                if(btn) {
+                    btn.style.background = 'white';
+                    btn.style.color = 'var(--primary)';
+                }
+            }
+        });
+    </script>
 </body>
-
 </html>

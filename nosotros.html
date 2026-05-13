@@ -3,40 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros y Logística | Yasemi S.A. de C.V.</title>
+    <title>Nosotros | Yasemi S.A. de C.V.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .contact-form {
-            background: white;
-            padding: 50px;
-            border-radius: 30px;
-            box-shadow: var(--shadow);
-            max-width: 800px;
-            margin: -100px auto 0;
+        .hero-internal {
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(44, 58, 39, 0.8), rgba(44, 58, 39, 0.8)), url('logistics_hero.png');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .hero-internal h1 {
+            color: white;
+            font-size: 3.5rem;
+        }
+
+        .timeline {
             position: relative;
-            z-index: 10;
+            max-width: 1000px;
+            margin: 0 auto;
         }
-        .form-group {
-            margin-bottom: 25px;
+
+        .value-card {
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: var(--shadow);
+            border-bottom: 5px solid var(--primary);
+            transition: var(--transition);
         }
-        .form-group label {
+
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .value-card i {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            background: var(--primary);
+            color: white;
+            padding: 100px 0;
+            border-radius: 50px 50px 0 0;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 30px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            border: none;
+            background: rgba(255,255,255,0.9);
+            font-family: inherit;
+        }
+
+        .contact-form label {
             display: block;
             margin-bottom: 8px;
             font-weight: 600;
-            color: var(--primary);
-        }
-        .form-group input, .form-group select, .form-group textarea {
-            width: 100%;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            font-family: 'Inter', sans-serif;
-            font-size: 1rem;
-        }
-        .form-group input:focus {
-            border-color: var(--secondary);
-            outline: none;
         }
     </style>
 </head>
@@ -50,130 +91,138 @@
         <div class="scroll-line-fill"></div>
     </div>
 
-    <nav id="main-nav">
-
+    <nav id="main-nav" style="background: transparent; border-bottom: 1px solid rgba(255,255,255,0.1);">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo" style="filter: brightness(0) invert(1);">
                 <img src="iso-logo.jpeg" alt="Yasemi Logo" style="height: 50px;">
             </a>
             <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="aguacate.html">Aguacate Hass</a>
-                <a href="nopal.html">Nopal Verdura</a>
-                <a href="seguridad.html">Compra Segura</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px;">Cotizar</a>
+                <a href="index.html" style="color: white;">Inicio</a>
+                <a href="aguacate.html" style="color: white;">Aguacate Hass</a>
+                <a href="nopal.html" style="color: white;">Nopal Verdura</a>
+                <a href="seguridad.html" style="color: white;">Compra Segura</a>
+                <a href="nosotros.html" style="color: white; font-weight: 700;">Nosotros</a>
+                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px; background: white; color: var(--primary) !important;">Cotizar</a>
             </div>
         </div>
     </nav>
 
-    <header style="padding: 150px 0 150px; background: var(--primary); color: white; text-align: center;">
+    <header class="hero-internal">
         <div class="container">
-            <h1 style="color: white;">Nuestra Misión y Presencia Global</h1>
-            <p style="font-size: 1.2rem; max-width: 700px; margin: 20px auto; color: #eee;">
-                Conectando la riqueza agrícola de México con los mercados internacionales a través de una logística de vanguardia.
-            </p>
+            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; font-size: 0.9rem; color: var(--secondary);">Nuestra Historia</span>
+            <h1>YASEMI: Exportación con Propósito</h1>
         </div>
     </header>
 
     <section class="reveal">
-
         <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; margin-bottom: 100px;">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
                 <div>
-                    <h2>Excelencia Operativa desde la CDMX</h2>
-                    <p style="margin-bottom: 20px;">Ubicados estratégicamente en la Colonia Cuauhtémoc, Ciudad de México, Yasemi S.A. de C.V. gestiona operaciones comerciales de gran escala con una red de productores certificados en Michoacán y Milpa Alta.</p>
-                    <p>Nuestra misión es profesionalizar la exportación agroindustrial, garantizando que cada caja enviada represente lo mejor del campo mexicano.</p>
-                    
-                    <div style="margin-top: 30px; display: flex; gap: 20px;">
-                        <div style="text-align: center; flex: 1;">
-                            <i class="fas fa-satellite" style="font-size: 2rem; color: var(--secondary);"></i>
-                            <h4 style="margin-top: 10px;">Trazabilidad</h4>
-                            <p style="font-size: 0.9rem;">GPS en tiempo real en todos los embarques.</p>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 25px;">Más que una Comercializadora</h2>
+                    <p style="font-size: 1.2rem; color: #444; margin-bottom: 20px;">
+                        YASEMI S.A. de C.V. nació con la visión de profesionalizar la exportación agrícola mexicana, eliminando los vicios de la intermediación tradicional.
+                    </p>
+                    <p style="color: #666; margin-bottom: 30px;">
+                        No solo vendemos productos; gestionamos activos biológicos y logísticos con precisión quirúrgica para asegurar que el esfuerzo de nuestros productores llegue íntegro a los mercados más exigentes de Asia, Europa y Norteamérica.
+                    </p>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div style="border-left: 4px solid var(--secondary); padding-left: 20px;">
+                            <span style="font-size: 2rem; font-weight: 700; color: var(--primary); display: block;">100%</span>
+                            <p style="font-size: 0.9rem;">Capital Mexicano</p>
                         </div>
-                        <div style="text-align: center; flex: 1;">
-                            <i class="fas fa-microchip" style="font-size: 2rem; color: var(--secondary);"></i>
-                            <h4 style="margin-top: 10px;">Tecnología</h4>
-                            <p style="font-size: 0.9rem;">Sensores de temperatura y etileno.</p>
+                        <div style="border-left: 4px solid var(--secondary); padding-left: 20px;">
+                            <span style="font-size: 2rem; font-weight: 700; color: var(--primary); display: block;">Global</span>
+                            <p style="font-size: 0.9rem;">Presencia en 3 continentes</p>
                         </div>
                     </div>
                 </div>
-                <div style="background: var(--bg-cream); padding: 40px; border-radius: 20px;">
-                    <h3 style="margin-bottom: 20px;">Compromiso Yasemi</h3>
-                    <ul style="list-style: none;">
-                        <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Capacidad de respuesta en 24h.</li>
-                        <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Certificaciones internacionales vigentes.</li>
-                        <li style="margin-bottom: 15px;"><i class="fas fa-check" style="color: var(--primary); margin-right: 10px;"></i> Suministro ininterrumpido anual.</li>
-                    </ul>
+                <img src="hero-bg.png" alt="Equipo Yasemi" style="width: 100%; border-radius: 40px; box-shadow: var(--shadow);">
+            </div>
+        </div>
+    </section>
+
+    <section class="reveal" style="background: var(--bg-cream);">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 60px;">Nuestros Pilares</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <div class="value-card">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Ética Comercial</h3>
+                    <p>Tratos directos con productores bajo esquemas de comercio justo que incentivan la calidad y la permanencia en el campo.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-microscope"></i>
+                    <h3>Innovación</h3>
+                    <p>Inversión constante en tecnologías de conservación y monitoreo de cadena de frío en tiempo real.</p>
+                </div>
+                <div class="value-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cumplimiento</h3>
+                    <p>Rigurosa observancia de las normativas fitosanitarias y de seguridad alimentaria internacionales.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contacto" class="reveal" style="background: var(--bg-cream); padding-bottom: 100px;">
-
+    <section id="contacto" class="contact-section reveal">
         <div class="container">
-            <div class="contact-form">
-                <h2 style="text-align: center; margin-bottom: 30px;">Formulario de Cotización Avanzada</h2>
-                <form action="#">
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                        <div class="form-group">
-                            <label>Nombre Completo / Empresa</label>
-                            <input type="text" placeholder="Ej. International Trading Co.">
-                        </div>
-                        <div class="form-group">
-                            <label>Correo Corporativo</label>
-                            <input type="email" placeholder="contacto@empresa.com">
-                        </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px;">
+                <div>
+                    <h2 style="color: white; font-size: 3rem; margin-bottom: 30px;">Inicie su Operación con Nosotros</h2>
+                    <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 40px;">
+                        Estamos listos para dimensionar su requerimiento de exportación. Complete el formulario y un especialista comercial se pondrá en contacto en menos de 24 horas.
+                    </p>
+                    <div style="margin-bottom: 30px;">
+                        <p style="margin-bottom: 15px;"><i class="fas fa-phone-alt" style="margin-right: 15px; color: var(--secondary);"></i>+52 (55) 1234 5678</p>
+                        <p style="margin-bottom: 15px;"><i class="fas fa-envelope" style="margin-right: 15px; color: var(--secondary);"></i>comercial@yasemi.com.mx</p>
+                        <p style="margin-bottom: 15px;"><i class="fas fa-building" style="margin-right: 15px; color: var(--secondary);"></i>Colonia Cuauhtémoc, CDMX</p>
                     </div>
-                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-                        <div class="form-group">
-                            <label>Producto de Interés</label>
-                            <select>
-                                <option>Aguacate Hass</option>
-                                <option>Nopal Verdura</option>
-                                <option>Ambos</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Volumen de Compra Estimado (Tons/Mes)</label>
-                            <input type="number" placeholder="Ej. 20">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Puerto o Destino de Entrega</label>
-                        <input type="text" placeholder="Ej. Puerto de Rotterdam / Los Angeles">
-                    </div>
-                    <div class="form-group">
-                        <label>Mensaje / Requerimientos Especiales</label>
-                        <textarea rows="5" placeholder="Especifique calibres, tipo de empaque o fechas de embarque..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 18px;">Enviar Solicitud de Cotización</button>
-                </form>
+                </div>
+                <div class="contact-form">
+                    <form action="#">
+                        <label>Nombre Completo</label>
+                        <input type="text" placeholder="Ej. Juan Pérez" required>
+                        
+                        <label>Correo Corporativo</label>
+                        <input type="email" placeholder="juan@empresa.com" required>
+                        
+                        <label>Producto de Interés</label>
+                        <select style="width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 10px; border: none; background: rgba(255,255,255,0.9); font-family: inherit;">
+                            <option>Aguacate Hass</option>
+                            <option>Nopal Verdura</option>
+                            <option>Ambos</option>
+                        </select>
+                        
+                        <label>Mensaje / Requerimiento</label>
+                        <textarea rows="4" placeholder="Cuéntenos sobre su proyecto de exportación..."></textarea>
+                        
+                        <button type="submit" class="btn" style="width: 100%; background: var(--secondary); color: white; padding: 20px; font-size: 1.1rem;">Enviar Solicitud</button>
+                    </form>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer style="background: var(--text-dark); color: white; padding: 50px 0;">
+    <footer style="background: var(--text-dark); color: white; padding: 80px 0 40px;">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 60px;">
                 <div>
-                    <img src="iso-logo.jpeg" alt="Yasemi Logo">
-                    <h3 style="color: white; margin-bottom: 10px;">YASEMI S.A. de C.V.</h3>
-                    <p>Exportación agroindustrial de alto impacto.</p>
+                    <img src="iso-logo.jpeg" alt="Yasemi Logo" style="filter: brightness(0) invert(1); margin-bottom: 20px;">
+                    <h3 style="color: white; margin-bottom: 15px;">YASEMI S.A. de C.V.</h3>
+                    <p style="opacity: 0.7;">Líderes en la exportación de productos agrícolas mexicanos de calidad premium.</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 15px;">Enlaces</h4>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Productos</h4>
                     <ul style="list-style: none;">
-                        <li><a href="index.html" style="color: white; text-decoration: none;">Inicio</a></li>
-                        <li><a href="aguacate.html" style="color: white; text-decoration: none;">Aguacate Hass</a></li>
-                        <li><a href="nopal.html" style="color: white; text-decoration: none;">Nopal Verdura</a></li>
+                        <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;">Aguacate Hass</a></li>
+                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;">Nopal Verdura</a></li>
+                        <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;">Compra Segura</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 15px;">Ubicación</h4>
-                    <p>Paseo de la Reforma, Colonia Cuauhtémoc</p>
-                    <p>CDMX, México</p>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Contacto</h4>
+                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i>CDMX, México</p>
+                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--secondary);"></i>info@yasemi.com.mx</p>
                 </div>
             </div>
         </div>
@@ -184,6 +233,31 @@
     </a>
 
     <script src="main.js"></script>
+    <script>
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'white';
+                nav.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+                document.querySelectorAll('.nav-links a').forEach(a => a.style.color = '#2C3A27');
+                document.querySelector('.logo').style.filter = 'none';
+                const btn = document.querySelector('.nav-links .btn-primary');
+                if(btn) {
+                    btn.style.background = 'var(--primary)';
+                    btn.style.color = 'white';
+                }
+            } else {
+                nav.style.background = 'transparent';
+                nav.style.boxShadow = 'none';
+                document.querySelectorAll('.nav-links a').forEach(a => a.style.color = 'white');
+                document.querySelector('.logo').style.filter = 'brightness(0) invert(1)';
+                const btn = document.querySelector('.nav-links .btn-primary');
+                if(btn) {
+                    btn.style.background = 'white';
+                    btn.style.color = 'var(--primary)';
+                }
+            }
+        });
+    </script>
 </body>
-
 </html>

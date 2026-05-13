@@ -3,26 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nopal Verdura Orgánico | Yasemi S.A. de C.V.</title>
+    <title>Nopal Orgánico Premium | Yasemi S.A. de C.V.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .benefit-card {
+        .hero-internal {
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('nopal_hero.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding-top: 80px;
+        }
+        .hero-internal h1 {
+            color: white;
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+        .hero-internal p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .info-card {
             background: white;
             padding: 40px;
-            border-radius: 20px;
+            border-radius: 30px;
             box-shadow: var(--shadow);
-            text-align: center;
+            border: 1px solid #eee;
+            height: 100%;
             transition: var(--transition);
         }
-        .benefit-card:hover {
+
+        .info-card:hover {
             transform: translateY(-10px);
+            border-color: var(--secondary);
         }
-        .medical-section {
-            background: var(--text-dark);
-            color: white;
+
+        .info-card i {
+            font-size: 3rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .benefit-tag {
+            display: inline-block;
+            background: var(--bg-cream);
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logistics-banner {
+            background: linear-gradient(rgba(75, 111, 68, 0.9), rgba(75, 111, 68, 0.9)), url('logistics_hero.png');
+            background-size: cover;
+            background-position: center;
             padding: 80px 0;
-            border-radius: 50px 50px 0 0;
+            color: white;
+            border-radius: 40px;
+            margin: 60px 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -36,118 +90,132 @@
         <div class="scroll-line-fill"></div>
     </div>
 
-    <nav id="main-nav">
-
+    <nav id="main-nav" style="background: transparent; border-bottom: 1px solid rgba(255,255,255,0.1);">
         <div class="container">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo" style="filter: brightness(0) invert(1);">
                 <img src="iso-logo.jpeg" alt="Yasemi Logo" style="height: 50px;">
             </a>
             <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="aguacate.html">Aguacate Hass</a>
-                <a href="nopal.html">Nopal Verdura</a>
-                <a href="seguridad.html">Compra Segura</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px;">Cotizar</a>
+                <a href="index.html" style="color: white;">Inicio</a>
+                <a href="aguacate.html" style="color: white;">Aguacate Hass</a>
+                <a href="nopal.html" style="color: white; font-weight: 700;">Nopal Verdura</a>
+                <a href="seguridad.html" style="color: white;">Compra Segura</a>
+                <a href="nosotros.html" style="color: white;">Nosotros</a>
+                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px; background: white; color: var(--primary) !important;">Cotizar</a>
             </div>
         </div>
     </nav>
 
-    <header style="padding: 150px 0 80px; background: linear-gradient(rgba(75, 111, 68, 0.9), rgba(75, 111, 68, 0.9)), url('nopal.png'); background-size: cover; background-position: center; color: white;">
-        <div class="container" style="text-align: center;">
-            <h1 style="color: white;">Nopal Verdura de Milpa Alta</h1>
-            <p style="font-size: 1.2rem; max-width: 700px; margin: 20px auto;">
-                Producción orgánica certificada del corazón de la Ciudad de México para los mercados más exigentes.
-            </p>
+    <header class="hero-internal">
+        <div class="container">
+            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; font-size: 0.9rem; color: var(--secondary);">Superfood Mexicano</span>
+            <h1>Nopal Orgánico de Milpa Alta</h1>
+            <p>Sustentabilidad, frescura y certificaciones internacionales en cada embarque.</p>
         </div>
     </header>
 
     <section class="reveal">
-
         <div class="container">
-            <div style="text-align: center; margin-bottom: 60px;">
-                <h2>Diferenciadores de Calidad</h2>
-                <p>Nuestra selección de Nopal destaca por su frescura y propiedades nutricionales superiores.</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <div class="info-card">
+                    <span class="benefit-tag">Calidad Superior</span>
+                    <i class="fas fa-leaf"></i>
+                    <h3>Selección Manual</h3>
+                    <p>Cada pieza es seleccionada a mano por expertos productores de Milpa Alta, asegurando un color verde vibrante, ausencia de espinas y el tamaño ideal para su mercado.</p>
+                </div>
+                <div class="info-card">
+                    <span class="benefit-tag">Larga Vida</span>
+                    <i class="fas fa-hourglass-half"></i>
+                    <h3>Post-Cosecha</h3>
+                    <p>Implementamos técnicas de enfriamiento rápido que permiten al nopal mantener su turgencia y propiedades nutricionales durante tránsitos internacionales prolongados.</p>
+                </div>
+                <div class="info-card">
+                    <span class="benefit-tag">Saludable</span>
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Certificación Orgánica</h3>
+                    <p>Producido bajo estándares orgánicos estrictos, libre de pesticidas químicos, garantizando un producto 100% natural y seguro para el consumidor final.</p>
+                </div>
             </div>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
-                <div class="benefit-card">
-                    <i class="fas fa-leaf" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;"></i>
-                    <h3>Baja Acidez</h3>
-                    <p>Sabor equilibrado ideal para consumo en fresco o procesos industriales.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-dna" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;"></i>
-                    <h3>Menos Fibroso</h3>
-                    <p>Textura suave y tierna, característica única de la región de Milpa Alta.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-hourglass-half" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;"></i>
-                    <h3>Larga Vida</h3>
-                    <p>Vida de anaquel de hasta 20 días bajo condiciones óptimas de refrigeración.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fas fa-award" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 20px;"></i>
-                    <h3>Orgánico</h3>
-                    <p>Certificación SENASICA, libre de pesticidas y químicos sintéticos.</p>
+
+            <div class="logistics-banner">
+                <div class="container">
+                    <h2 style="color: white; font-size: 2.5rem; margin-bottom: 20px;">Capacidad de Suministro Todo el Año</h2>
+                    <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9;">
+                        Nuestra red de productores nos permite garantizar volumen constante incluso en temporadas de baja producción nacional.
+                    </p>
+                    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
+                        <div>
+                            <span style="display: block; font-size: 2.5rem; font-weight: 700;">+50</span>
+                            <p>Toneladas Semanales</p>
+                        </div>
+                        <div>
+                            <span style="display: block; font-size: 2.5rem; font-weight: 700;">100%</span>
+                            <p>Trazabilidad</p>
+                        </div>
+                        <div>
+                            <span style="display: block; font-size: 2.5rem; font-weight: 700;">24/7</span>
+                            <p>Monitoreo Térmico</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="medical-section reveal">
-
+    <section class="reveal" style="background: var(--bg-cream);">
         <div class="container">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
+                <img src="nopal.png" alt="Nopal detalle" style="width: 100%; border-radius: 30px; box-shadow: var(--shadow);">
                 <div>
-                    <h2 style="color: var(--secondary); font-size: 2.5rem; margin-bottom: 20px;">Uso Medicinal y Nutricional</h2>
-                    <p style="margin-bottom: 20px;">El nopal es reconocido mundialmente como un superalimento ("Superfood") debido a su alta concentración de fibra soluble y polifenoles.</p>
-                    <ul style="list-style: none; padding: 0;">
-                        <li style="margin-bottom: 15px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 10px;"></i> <strong>Efecto Hipoglucemiante:</strong> Ayuda a regular los niveles de azúcar en la sangre.</li>
-                        <li style="margin-bottom: 15px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 10px;"></i> <strong>Control de Colesterol:</strong> Reduce la absorción de grasas en el tracto digestivo.</li>
-                        <li style="margin-bottom: 15px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 10px;"></i> <strong>Rico en Calcio:</strong> Esencial para la salud ósea y muscular.</li>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Formatos de Presentación</h2>
+                    <p style="margin-bottom: 30px; font-size: 1.1rem; color: #555;">Nos adaptamos a las necesidades de su canal de venta, desde granel para procesadores hasta empaques retail listos para anaquel.</p>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 15px;">
+                            <i class="fas fa-box" style="color: var(--primary); margin-top: 5px;"></i>
+                            <div>
+                                <strong style="display: block; font-size: 1.1rem;">Caja Master (10kg / 20kg)</strong>
+                                <p style="color: #666;">Ideal para mercados de abasto y distribuidores mayoristas.</p>
+                            </div>
+                        </li>
+                        <li style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 15px;">
+                            <i class="fas fa-tags" style="color: var(--primary); margin-top: 5px;"></i>
+                            <div>
+                                <strong style="display: block; font-size: 1.1rem;">Empaque Clamshell / Bolsa</strong>
+                                <p style="color: #666;">Presentaciones de 500g o 1kg con su propia marca o marca Yasemi.</p>
+                            </div>
+                        </li>
                     </ul>
-                </div>
-                <div style="background: rgba(255,255,255,0.05); padding: 40px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.1);">
-                    <h3 style="color: white; margin-bottom: 20px;">Ficha Técnica de Suministro</h3>
-                    <p><strong>Variedad:</strong> Opuntia ficus-indica</p>
-                    <p><strong>Presentación:</strong> Con espina / Sin espina (Desespinado manual)</p>
-                    <p><strong>Empaque:</strong> Cajas de cartón de 5kg / 10kg</p>
-                    <p><strong>Origen:</strong> Milpa Alta, CDMX, México</p>
+                    <a href="FICHA TÉCNICA nopal milpa alta.pdf" target="_blank" class="btn btn-primary" style="margin-top: 20px;">Descargar Ficha Técnica</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="reveal" style="background: var(--bg-cream); text-align: center;">
-
+    <footer style="background: var(--text-dark); color: white; padding: 80px 0 40px;">
         <div class="container">
-            <h2 style="margin-bottom: 30px;">Disponibilidad de Temporada</h2>
-            <p style="margin-bottom: 40px;">Producimos nopal de alta calidad durante todo el año, con picos de cosecha de Marzo a Julio.</p>
-            <a href="nosotros.html#contacto" class="btn btn-primary">Solicitar Muestras de Exportación</a>
-        </div>
-    </section>
-
-    <footer style="background: var(--text-dark); color: white; padding: 50px 0;">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 60px;">
                 <div>
-                    <img src="iso-logo.jpeg" alt="Yasemi Logo">
-                    <h3 style="color: white; margin-bottom: 10px;">YASEMI S.A. de C.V.</h3>
-                    <p>Exportación agroindustrial de alto impacto.</p>
+                    <img src="iso-logo.jpeg" alt="Yasemi Logo" style="filter: brightness(0) invert(1); margin-bottom: 20px;">
+                    <h3 style="color: white; margin-bottom: 15px;">YASEMI S.A. de C.V.</h3>
+                    <p style="opacity: 0.7;">Líderes en la exportación de productos agrícolas mexicanos de calidad premium.</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 15px;">Enlaces</h4>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Productos</h4>
                     <ul style="list-style: none;">
-                        <li><a href="index.html" style="color: white; text-decoration: none;">Inicio</a></li>
-                        <li><a href="aguacate.html" style="color: white; text-decoration: none;">Aguacate Hass</a></li>
-                        <li><a href="seguridad.html" style="color: white; text-decoration: none;">Compra Segura</a></li>
+                        <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;">Aguacate Hass</a></li>
+                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;">Nopal Verdura</a></li>
+                        <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;">Compra Segura</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 15px;">Contacto</h4>
-                    <p>CDMX, Colonia Cuauhtémoc</p>
-                    <p>info@yasemi.com.mx</p>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Contacto</h4>
+                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i>CDMX, México</p>
+                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--secondary);"></i>info@yasemi.com.mx</p>
+                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fab fa-linkedin" style="margin-right: 10px; color: var(--secondary);"></i>LinkedIn</p>
                 </div>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 60px; padding-top: 30px; text-align: center; opacity: 0.5; font-size: 0.9rem;">
+                <p>&copy; 2024 YASEMI S.A. de C.V. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
@@ -157,6 +225,32 @@
     </a>
 
     <script src="main.js"></script>
+    <script>
+        // Update nav background on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 50) {
+                nav.style.background = 'white';
+                nav.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+                document.querySelectorAll('.nav-links a').forEach(a => a.style.color = '#2C3A27');
+                document.querySelector('.logo').style.filter = 'none';
+                const btn = document.querySelector('.nav-links .btn-primary');
+                if(btn) {
+                    btn.style.background = 'var(--primary)';
+                    btn.style.color = 'white';
+                }
+            } else {
+                nav.style.background = 'transparent';
+                nav.style.boxShadow = 'none';
+                document.querySelectorAll('.nav-links a').forEach(a => a.style.color = 'white');
+                document.querySelector('.logo').style.filter = 'brightness(0) invert(1)';
+                const btn = document.querySelector('.nav-links .btn-primary');
+                if(btn) {
+                    btn.style.background = 'white';
+                    btn.style.color = 'var(--primary)';
+                }
+            }
+        });
+    </script>
 </body>
-
 </html>
