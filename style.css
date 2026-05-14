@@ -89,12 +89,13 @@ nav {
     padding: 20px 0;
     z-index: 2000;
     transition: var(--transition);
+    background: #F2F0E4; /* Solid background for better blend mode support */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 nav.scrolled {
     padding: 10px 0;
     box-shadow: var(--shadow);
-    background: white !important;
 }
 
 nav .container {
@@ -103,35 +104,17 @@ nav .container {
     align-items: center;
 }
 
-.logo-white {
-    transition: var(--transition);
-}
-
-nav.scrolled .logo-white {
-    mix-blend-mode: multiply; /* Oculta el fondo blanco del JPEG sobre el nav blanco */
-    filter: none !important;
-}
-
-nav.scrolled .nav-links a {
-    color: var(--text-dark) !important;
-}
-
-nav.scrolled .menu-toggle {
-    color: var(--text-dark) !important;
-}
-
 .logo {
     display: flex;
     align-items: center;
+    mix-blend-mode: darken; /* Oculta el fondo blanco del JPEG sobre el fondo crema */
+    transition: var(--transition);
 }
 
 .logo img {
-    height: 55px;
-    display: block;
+    height: 50px;
+    transition: var(--transition);
 }
-
-
-
 
 .nav-links {
     display: flex;
@@ -144,18 +127,11 @@ nav.scrolled .menu-toggle {
     color: var(--text-dark);
     font-weight: 500;
     transition: var(--transition);
-}
-
-.nav-links a.btn-primary {
-    color: var(--white) !important; /* Ensure button text is white */
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 .nav-links a:hover {
     color: var(--primary);
-}
-
-.nav-links a.btn-primary:hover {
-    color: var(--white) !important;
 }
 
 /* Menu Toggle Button */
@@ -168,15 +144,6 @@ nav.scrolled .menu-toggle {
     cursor: pointer;
     z-index: 1001;
     transition: var(--transition);
-}
-
-nav.scrolled .menu-toggle {
-    color: var(--text-dark) !important;
-}
-
-nav:not(.scrolled) .nav-links a,
-nav:not(.scrolled) .menu-toggle {
-    color: white !important;
 }
 
 @media (max-width: 768px) {
