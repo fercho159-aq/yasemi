@@ -86,5 +86,31 @@ document.addEventListener('DOMContentLoaded', () => {
             nav.classList.remove('scrolled');
         }
     });
+
+    // SISTEMA DE MENÚ HAMBURGUESA
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = menuToggle.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.replace('fa-bars', 'fa-times');
+            } else {
+                icon.classList.replace('fa-times', 'fa-bars');
+            }
+        });
+
+        // Cerrar menú al hacer click en un link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                if (menuToggle.querySelector('i')) {
+                    menuToggle.querySelector('i').classList.replace('fa-times', 'fa-bars');
+                }
+            });
+        });
+    }
 });
 
