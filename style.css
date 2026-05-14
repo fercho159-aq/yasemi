@@ -97,11 +97,18 @@ nav.scrolled {
     background: white !important;
 }
 
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo-white {
-    filter: brightness(0) invert(1);
+    transition: var(--transition);
 }
 
 nav.scrolled .logo-white {
+    mix-blend-mode: multiply; /* Oculta el fondo blanco del JPEG sobre el nav blanco */
     filter: none !important;
 }
 
@@ -186,9 +193,8 @@ nav:not(.scrolled) .menu-toggle {
         height: 100vh;
         background: white;
         flex-direction: column;
-        justify-content: flex-start; /* Subir los links */
-        padding-top: 100px; /* Espacio para el botón de cierre */
-        gap: 30px;
+        justify-content: center; /* Volver a centrar para mejor equilibrio visual */
+        gap: 25px; /* Gap más compacto */
         transition: var(--transition);
         box-shadow: -10px 0 30px rgba(0,0,0,0.1);
         z-index: 10000; /* Encima de todo */
