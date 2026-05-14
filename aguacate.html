@@ -125,23 +125,23 @@
         <div class="scroll-line-fill"></div>
     </div>
 
-    <nav id="main-nav" style="background: transparent; border-bottom: 1px solid rgba(255,255,255,0.1);">
+    <nav id="main-nav">
         <div class="container">
-            <a href="index.html" class="logo" style="filter: brightness(0) invert(1);">
+            <a href="index.html" class="logo logo-white">
                 <img src="iso-logo.jpeg" alt="Yasemi Logo" style="height: 50px;">
             </a>
             
-            <button class="menu-toggle" style="color: white;">
+            <button class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
 
             <div class="nav-links">
-                <a href="index.html" style="color: white;">Inicio</a>
-                <a href="aguacate.html" style="color: white; font-weight: 700;">Aguacate Hass</a>
-                <a href="nopal.html" style="color: white;">Nopal Verdura</a>
-                <a href="seguridad.html" style="color: white;">Compra Segura</a>
-                <a href="nosotros.html" style="color: white;">Nosotros</a>
-                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px; background: white; color: var(--primary) !important;">Cotizar</a>
+                <a href="index.html">Inicio</a>
+                <a href="aguacate.html">Aguacate Hass</a>
+                <a href="nopal.html">Nopal Verdura</a>
+                <a href="seguridad.html">Compra Segura</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="nosotros.html#contacto" class="btn btn-primary">Cotizar</a>
             </div>
         </div>
     </nav>
@@ -277,32 +277,5 @@
     </a>
 
     <script src="main.js"></script>
-    <script>
-        // Update nav background on scroll
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('main-nav');
-            if (window.scrollY > 50) {
-                nav.style.background = 'white';
-                nav.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
-                document.querySelectorAll('.nav-links a').forEach(a => a.style.color = '#2C3A27');
-                document.querySelector('.logo').style.filter = 'none';
-                const btn = document.querySelector('.nav-links .btn-primary');
-                if(btn) {
-                    btn.style.background = 'var(--primary)';
-                    btn.style.color = 'white';
-                }
-            } else {
-                nav.style.background = 'transparent';
-                nav.style.boxShadow = 'none';
-                document.querySelectorAll('.nav-links a').forEach(a => a.style.color = 'white');
-                document.querySelector('.logo').style.filter = 'brightness(0) invert(1)';
-                const btn = document.querySelector('.nav-links .btn-primary');
-                if(btn) {
-                    btn.style.background = 'white';
-                    btn.style.color = 'var(--primary)';
-                }
-            }
-        });
-    </script>
 </body>
 </html>

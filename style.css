@@ -87,27 +87,35 @@ nav {
     top: 0;
     width: 100%;
     padding: 20px 0;
-    z-index: 1000;
+    z-index: 2000;
     transition: var(--transition);
-    background: #F2F0E4; /* Solid background for better blend mode support */
-
 }
 
 nav.scrolled {
     padding: 10px 0;
     box-shadow: var(--shadow);
+    background: white !important;
 }
 
-nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.logo-white {
+    filter: brightness(0) invert(1);
+}
+
+nav.scrolled .logo-white {
+    filter: none !important;
+}
+
+nav.scrolled .nav-links a {
+    color: var(--text-dark) !important;
+}
+
+nav.scrolled .menu-toggle {
+    color: var(--text-dark) !important;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    mix-blend-mode: darken;
 }
 
 .logo img {
@@ -152,6 +160,16 @@ nav .container {
     font-size: 1.5rem;
     cursor: pointer;
     z-index: 1001;
+    transition: var(--transition);
+}
+
+nav.scrolled .menu-toggle {
+    color: var(--text-dark) !important;
+}
+
+nav:not(.scrolled) .nav-links a,
+nav:not(.scrolled) .menu-toggle {
+    color: white !important;
 }
 
 @media (max-width: 768px) {
@@ -168,8 +186,9 @@ nav .container {
         height: 100vh;
         background: white;
         flex-direction: column;
-        justify-content: center;
-        gap: 40px;
+        justify-content: flex-start; /* Subir los links */
+        padding-top: 100px; /* Espacio para el botón de cierre */
+        gap: 30px;
         transition: var(--transition);
         box-shadow: -10px 0 30px rgba(0,0,0,0.1);
         z-index: 10000; /* Encima de todo */
