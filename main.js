@@ -97,8 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const icon = menuToggle.querySelector('i');
             if (navLinks.classList.contains('active')) {
                 icon.classList.replace('fa-bars', 'fa-times');
+                menuToggle.style.color = '#2C3A27'; // Asegurar color oscuro al abrir
             } else {
                 icon.classList.replace('fa-times', 'fa-bars');
+                // Restaurar color original basado en si la nav es transparente o no
+                if (!nav.classList.contains('scrolled') && document.querySelector('.hero-internal')) {
+                    menuToggle.style.color = 'white';
+                }
             }
         });
 

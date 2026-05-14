@@ -157,6 +157,7 @@ nav .container {
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
+        z-index: 10001; /* Asegurar que el botón esté arriba del panel */
     }
 
     .nav-links {
@@ -171,7 +172,8 @@ nav .container {
         gap: 40px;
         transition: var(--transition);
         box-shadow: -10px 0 30px rgba(0,0,0,0.1);
-        z-index: 1000;
+        z-index: 10000; /* Encima de todo */
+        display: flex !important; /* Asegurar visibilidad cuando se activa */
     }
 
     .nav-links.active {
