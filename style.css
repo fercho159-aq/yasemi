@@ -302,6 +302,50 @@ footer img {
     }
 }
 
+/* Responsive Helpers for Modules */
+.responsive-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.solution-card {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    display: flex;
+    align-items: stretch;
+    height: 180px;
+    border: 1px solid #eee;
+}
+
+.promesa-title {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
+}
+
+@media (max-width: 1023px) {
+    .responsive-grid {
+        grid-template-columns: 1fr !important;
+    }
+    
+    .solution-card {
+        flex-direction: column !important;
+        height: auto !important;
+    }
+    
+    .solution-card img {
+        width: 100% !important;
+        height: 200px !important;
+    }
+
+    .promesa-title {
+        font-size: 1.5rem !important; /* Aproximadamente 10-15% menos */
+    }
+}
+
 /* Fallback for Mobile (Vertical) */
 @media (max-width: 1023px) {
     .horizontal-scroll-wrapper {

@@ -77,7 +77,7 @@
                 <div class="h-module" style="background: var(--primary); color: white;">
                     <div class="container" style="max-width: 900px;">
                         <h2 style="color: white; font-size: 2.2rem; margin-bottom: 40px; text-align: center;">No te la juegues con intermediarios</h2>
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                        <div class="responsive-grid">
                             <div style="display: flex; align-items: center; gap: 25px; padding: 25px 30px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
                                 <i class="fas fa-exclamation-triangle" style="font-size: 2rem; color: #ffcc00; flex-shrink: 0; width: 50px; text-align: center;"></i>
                                 <div>
@@ -92,7 +92,7 @@
                                     <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.95rem;">Cada hora de retraso es un día menos de anaquel.</p>
                                 </div>
                             </div>
-                            <div style="display: flex; align-items: center; gap: 25px; padding: 25px 30px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); grid-column: span 2;">
+                            <div style="display: flex; align-items: center; gap: 25px; padding: 25px 30px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); grid-column: span 1;">
                                 <i class="fas fa-chart-line" style="font-size: 2rem; color: #ffcc00; flex-shrink: 0; width: 50px; text-align: center; transform: rotate(180deg);"></i>
                                 <div>
                                     <h3 style="color: white; font-size: 1.4rem; margin-bottom: 5px;">Pérdidas Reales</h3>
@@ -111,7 +111,7 @@
                             <p style="margin: 0 auto; font-size: 1.1rem; color: #555;">Controlamos toda la cadena para garantizar frescura absoluta.</p>
                         </div>
                         <div style="display: flex; flex-direction: column; gap: 25px;">
-                            <div style="background: white; border-radius: 25px; overflow: hidden; box-shadow: var(--shadow); display: flex; align-items: stretch; height: 180px; border: 1px solid #eee;">
+                            <div class="solution-card">
                                 <img src="avocado.png" style="width: 250px; object-fit: cover; flex-shrink: 0;">
                                 <div style="padding: 25px 40px; display: flex; flex-direction: column; justify-content: center; flex-grow: 1;">
                                     <div style="margin-bottom: 8px;">
@@ -121,7 +121,7 @@
                                     <p style="font-size: 1rem; color: #555; margin: 0; line-height: 1.4;">Calibres 32-70, empaque personalizado y trazabilidad total desde el huerto.</p>
                                 </div>
                             </div>
-                            <div style="background: white; border-radius: 25px; overflow: hidden; box-shadow: var(--shadow); display: flex; align-items: stretch; height: 180px; border: 1px solid #eee;">
+                            <div class="solution-card">
                                 <img src="nopal.png" style="width: 250px; object-fit: cover; flex-shrink: 0;">
                                 <div style="padding: 25px 40px; display: flex; flex-direction: column; justify-content: center; flex-grow: 1;">
                                     <div style="margin-bottom: 8px;">
@@ -142,15 +142,15 @@
                         <div style="display: flex; flex-direction: column; gap: 15px;">
                             <div style="display: flex; align-items: center; gap: 30px; padding: 25px 40px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
                                 <i class="fas fa-leaf" style="font-size: 2.5rem; color: #8DA967; flex-shrink: 0; width: 60px; text-align: center;"></i>
-                                <h4 style="font-size: 1.8rem; color: white; margin: 0;">Sustentabilidad</h4>
+                                <h4 class="promesa-title">Sustentabilidad</h4>
                             </div>
                             <div style="display: flex; align-items: center; gap: 30px; padding: 25px 40px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
                                 <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: #8DA967; flex-shrink: 0; width: 60px; text-align: center;"></i>
-                                <h4 style="font-size: 1.8rem; color: white; margin: 0;">Trazabilidad</h4>
+                                <h4 class="promesa-title">Trazabilidad</h4>
                             </div>
                             <div style="display: flex; align-items: center; gap: 30px; padding: 25px 40px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
                                 <i class="fas fa-handshake" style="font-size: 2.5rem; color: #8DA967; flex-shrink: 0; width: 60px; text-align: center;"></i>
-                                <h4 style="font-size: 1.8rem; color: white; margin: 0;">Trato Justo</h4>
+                                <h4 class="promesa-title">Trato Justo</h4>
                             </div>
                         </div>
                     </div>
