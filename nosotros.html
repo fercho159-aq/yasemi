@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros | Yasemi S.A. de C.V.</title>
+    <title data-i18n="nos.title">Nosotros | Yasemi S.A. de C.V.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -102,20 +102,23 @@
             </button>
 
             <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="aguacate.html">Aguacate Hass</a>
-                <a href="nopal.html">Nopal</a>
-                <a href="seguridad.html">Compra Segura</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="nosotros.html#contacto" class="btn btn-primary">Cotizar</a>
+                <a href="index.html" data-i18n="nav.home">Inicio</a>
+                <a href="aguacate.html" data-i18n="nav.avocado">Aguacate Hass</a>
+                <a href="nopal.html" data-i18n="nav.nopal">Nopal</a>
+                <a href="seguridad.html" data-i18n="nav.security">Compra Segura</a>
+                <a href="nosotros.html" data-i18n="nav.about">Nosotros</a>
+                <a href="nosotros.html#contacto" class="btn btn-primary" data-i18n="nav.quote">Cotizar</a>
+                <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+                    <i class="fas fa-globe"></i><span class="lang-toggle-text">EN</span>
+                </button>
             </div>
         </div>
     </nav>
 
     <header class="hero-internal">
         <div class="container">
-            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; font-size: 0.9rem; color: var(--secondary);">Nuestra Historia</span>
-            <h1>YASEMI: Exportación con Propósito</h1>
+            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; font-size: 0.9rem; color: var(--secondary);" data-i18n="nos.hero.tag">Nuestra Historia</span>
+            <h1 data-i18n="nos.hero.title">YASEMI: Exportación con Propósito</h1>
         </div>
     </header>
 
@@ -123,21 +126,21 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
                 <div>
-                    <h2 style="font-size: 2.5rem; margin-bottom: 25px;">Más que una Comercializadora</h2>
-                    <p style="font-size: 1.2rem; color: #444; margin-bottom: 20px;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 25px;" data-i18n="nos.intro.title">Más que una Comercializadora</h2>
+                    <p style="font-size: 1.2rem; color: #444; margin-bottom: 20px;" data-i18n="nos.intro.text1">
                         YASEMI S.A. de C.V. nació con la visión de profesionalizar la exportación agrícola mexicana, eliminando los vicios de la intermediación tradicional.
                     </p>
-                    <p style="color: #666; margin-bottom: 30px;">
+                    <p style="color: #666; margin-bottom: 30px;" data-i18n="nos.intro.text2">
                         No solo vendemos productos; gestionamos activos biológicos y logísticos con precisión quirúrgica para asegurar que el esfuerzo de nuestros productores llegue íntegro a los mercados más exigentes de Asia, Europa y Norteamérica.
                     </p>
                     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
                         <div style="border-left: 4px solid var(--secondary); padding-left: 20px;">
                             <span style="font-size: 2rem; font-weight: 700; color: var(--primary); display: block;">100%</span>
-                            <p style="font-size: 0.9rem;">Capital Mexicano</p>
+                            <p style="font-size: 0.9rem;" data-i18n="nos.intro.capital">Capital Mexicano</p>
                         </div>
                         <div style="border-left: 4px solid var(--secondary); padding-left: 20px;">
                             <span style="font-size: 2rem; font-weight: 700; color: var(--primary); display: block;">Global</span>
-                            <p style="font-size: 0.9rem;">Presencia en 3 continentes</p>
+                            <p style="font-size: 0.9rem;" data-i18n="nos.intro.presence">Presencia en 3 continentes</p>
                         </div>
                     </div>
                 </div>
@@ -148,22 +151,22 @@
 
     <section class="reveal" style="background: var(--bg-cream);">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 60px;">Nuestros Pilares</h2>
+            <h2 style="text-align: center; margin-bottom: 60px;" data-i18n="nos.pillars.title">Nuestros Pilares</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
                 <div class="value-card">
                     <i class="fas fa-handshake"></i>
-                    <h3>Ética Comercial</h3>
-                    <p>Tratos directos con productores bajo esquemas de comercio justo que incentivan la calidad y la permanencia en el campo.</p>
+                    <h3 data-i18n="nos.pillars.p1Title">Ética Comercial</h3>
+                    <p data-i18n="nos.pillars.p1Text">Tratos directos con productores bajo esquemas de comercio justo que incentivan la calidad y la permanencia en el campo.</p>
                 </div>
                 <div class="value-card">
                     <i class="fas fa-microscope"></i>
-                    <h3>Innovación</h3>
-                    <p>Inversión constante en tecnologías de conservación y monitoreo de cadena de frío en tiempo real.</p>
+                    <h3 data-i18n="nos.pillars.p2Title">Innovación</h3>
+                    <p data-i18n="nos.pillars.p2Text">Inversión constante en tecnologías de conservación y monitoreo de cadena de frío en tiempo real.</p>
                 </div>
                 <div class="value-card">
                     <i class="fas fa-shield-alt"></i>
-                    <h3>Cumplimiento</h3>
-                    <p>Rigurosa observancia de las normativas fitosanitarias y de seguridad alimentaria internacionales.</p>
+                    <h3 data-i18n="nos.pillars.p3Title">Cumplimiento</h3>
+                    <p data-i18n="nos.pillars.p3Text">Rigurosa observancia de las normativas fitosanitarias y de seguridad alimentaria internacionales.</p>
                 </div>
             </div>
         </div>
@@ -173,8 +176,8 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px;">
                 <div>
-                    <h2 style="color: white; font-size: 3rem; margin-bottom: 30px;">Inicie su Operación con Nosotros</h2>
-                    <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 40px;">
+                    <h2 style="color: white; font-size: 3rem; margin-bottom: 30px;" data-i18n="nos.contact.title">Inicie su Operación con Nosotros</h2>
+                    <p style="font-size: 1.2rem; opacity: 0.9; margin-bottom: 40px;" data-i18n="nos.contact.text">
                         Estamos listos para dimensionar su requerimiento de exportación. Complete el formulario y un especialista comercial se pondrá en contacto en menos de 24 horas.
                     </p>
                     <div style="margin-bottom: 30px;">
@@ -185,23 +188,23 @@
                 </div>
                 <div class="contact-form">
                     <form action="#">
-                        <label>Nombre Completo</label>
-                        <input type="text" placeholder="Ej. Juan Pérez" required>
+                        <label data-i18n="nos.form.name">Nombre Completo</label>
+                        <input type="text" placeholder="Ej. Juan Pérez" data-i18n-placeholder="nos.form.namePh" required>
                         
-                        <label>Correo Corporativo</label>
-                        <input type="email" placeholder="juan@empresa.com" required>
+                        <label data-i18n="nos.form.email">Correo Corporativo</label>
+                        <input type="email" placeholder="juan@empresa.com" data-i18n-placeholder="nos.form.emailPh" required>
                         
-                        <label>Producto de Interés</label>
+                        <label data-i18n="nos.form.product">Producto de Interés</label>
                         <select style="width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 10px; border: none; background: rgba(255,255,255,0.9); font-family: inherit;">
-                            <option>Aguacate Hass</option>
-                            <option>Nopal</option>
-                            <option>Ambos</option>
+                            <option data-i18n="nav.avocado">Aguacate Hass</option>
+                            <option data-i18n="nav.nopal">Nopal</option>
+                            <option data-i18n="nos.form.optBoth">Ambos</option>
                         </select>
                         
-                        <label>Mensaje / Requerimiento</label>
-                        <textarea rows="4" placeholder="Cuéntenos sobre su proyecto de exportación..."></textarea>
+                        <label data-i18n="nos.form.message">Mensaje / Requerimiento</label>
+                        <textarea rows="4" placeholder="Cuéntenos sobre su proyecto de exportación..." data-i18n-placeholder="nos.form.messagePh"></textarea>
                         
-                        <button type="submit" class="btn" style="width: 100%; background: var(--secondary); color: white; padding: 20px; font-size: 1.1rem;">Enviar Solicitud</button>
+                        <button type="submit" class="btn" style="width: 100%; background: var(--secondary); color: white; padding: 20px; font-size: 1.1rem;" data-i18n="nos.form.submit">Enviar Solicitud</button>
                     </form>
                 </div>
             </div>
@@ -214,19 +217,19 @@
                 <div>
                     <img src="iso-logo.jpeg" alt="Yasemi Logo" style="filter: brightness(0) invert(1); margin-bottom: 20px;">
                     <h3 style="color: white; margin-bottom: 15px;">YASEMI S.A. de C.V.</h3>
-                    <p style="opacity: 0.7;">Líderes en la exportación de productos agrícolas mexicanos de calidad premium.</p>
+                    <p style="opacity: 0.7;" data-i18n="footer.taglineExport">Líderes en la exportación de productos agrícolas mexicanos de calidad premium.</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Productos</h4>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;" data-i18n="footer.products">Productos</h4>
                     <ul style="list-style: none;">
-                        <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;">Aguacate Hass</a></li>
-                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;">Nopal</a></li>
-                        <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;">Compra Segura</a></li>
+                        <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.avocado">Aguacate Hass</a></li>
+                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.nopal">Nopal</a></li>
+                        <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.security">Compra Segura</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Contacto</h4>
-                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i>CDMX, México</p>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;" data-i18n="footer.contact">Contacto</h4>
+                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i><span data-i18n="footer.locationMX">CDMX, México</span></p>
                     <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--secondary);"></i>info@yasemi.com.mx</p>
                 </div>
             </div>

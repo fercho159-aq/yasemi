@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nopal Premium | Yasemi S.A. de C.V.</title>
+    <title data-i18n="nopal.title">Nopal Premium | Yasemi S.A. de C.V.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -101,21 +101,24 @@
             </button>
 
             <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="aguacate.html">Aguacate Hass</a>
-                <a href="nopal.html" style="font-weight: 700;">Nopal</a>
-                <a href="seguridad.html">Compra Segura</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px;">Cotizar</a>
+                <a href="index.html" data-i18n="nav.home">Inicio</a>
+                <a href="aguacate.html" data-i18n="nav.avocado">Aguacate Hass</a>
+                <a href="nopal.html" style="font-weight: 700;" data-i18n="nav.nopal">Nopal</a>
+                <a href="seguridad.html" data-i18n="nav.security">Compra Segura</a>
+                <a href="nosotros.html" data-i18n="nav.about">Nosotros</a>
+                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px;" data-i18n="nav.quote">Cotizar</a>
+                <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+                    <i class="fas fa-globe"></i><span class="lang-toggle-text">EN</span>
+                </button>
             </div>
         </div>
     </nav>
 
     <header class="hero-internal">
         <div class="container">
-            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; font-size: 0.9rem; color: var(--secondary);">Superfood Mexicano</span>
-            <h1>Nopal de Milpa Alta</h1>
-            <p>Sustentabilidad, frescura y cultivo 100% natural en cada entrega nacional.</p>
+            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; font-size: 0.9rem; color: var(--secondary);" data-i18n="nopal.hero.tag">Superfood Mexicano</span>
+            <h1 data-i18n="nopal.hero.title">Nopal de Milpa Alta</h1>
+            <p data-i18n="nopal.hero.subtitle">Sustentabilidad, frescura y cultivo 100% natural en cada entrega nacional.</p>
         </div>
     </header>
 
@@ -123,43 +126,43 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
                 <div class="info-card">
-                    <span class="benefit-tag">Calidad Superior</span>
+                    <span class="benefit-tag" data-i18n="nopal.card1.tag">Calidad Superior</span>
                     <i class="fas fa-leaf"></i>
-                    <h3>Selección Manual</h3>
-                    <p>Cada pieza es seleccionada a mano por expertos productores de Milpa Alta, asegurando un color verde vibrante, ausencia de espinas y el tamaño ideal para el mercado nacional.</p>
+                    <h3 data-i18n="nopal.card1.title">Selección Manual</h3>
+                    <p data-i18n="nopal.card1.text">Cada pieza es seleccionada a mano por expertos productores de Milpa Alta, asegurando un color verde vibrante, ausencia de espinas y el tamaño ideal para el mercado nacional.</p>
                 </div>
                 <div class="info-card">
-                    <span class="benefit-tag">Larga Vida</span>
+                    <span class="benefit-tag" data-i18n="nopal.card2.tag">Larga Vida</span>
                     <i class="fas fa-hourglass-half"></i>
-                    <h3>Post-Cosecha</h3>
-                    <p>Implementamos técnicas de enfriamiento rápido que permiten al nopal mantener su turgencia y propiedades nutricionales durante la distribución nacional y tránsitos prolongados.</p>
+                    <h3 data-i18n="nopal.card2.title">Post-Cosecha</h3>
+                    <p data-i18n="nopal.card2.text">Implementamos técnicas de enfriamiento rápido que permiten al nopal mantener su turgencia y propiedades nutricionales durante la distribución nacional y tránsitos prolongados.</p>
                 </div>
                 <div class="info-card">
-                    <span class="benefit-tag">Transparencia</span>
+                    <span class="benefit-tag" data-i18n="nopal.card3.tag">Transparencia</span>
                     <i class="fas fa-seedling"></i>
-                    <h3>Proceso 100% Natural</h3>
-                    <p>Cultivado sin pesticidas químicos. Aunque no contamos con sellos internacionales oficiales, abrimos nuestras puertas para mostrar todo el proceso de cultivo y verificar su pureza natural.</p>
+                    <h3 data-i18n="nopal.card3.title">Proceso 100% Natural</h3>
+                    <p data-i18n="nopal.card3.text">Cultivado sin pesticidas químicos. Aunque no contamos con sellos internacionales oficiales, abrimos nuestras puertas para mostrar todo el proceso de cultivo y verificar su pureza natural.</p>
                 </div>
             </div>
 
             <div class="logistics-banner">
                 <div class="container">
-                    <h2 style="color: white; font-size: 2.5rem; margin-bottom: 20px;">Capacidad de Suministro Todo el Año</h2>
-                    <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9;">
+                    <h2 style="color: white; font-size: 2.5rem; margin-bottom: 20px;" data-i18n="nopal.banner.title">Capacidad de Suministro Todo el Año</h2>
+                    <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 30px; opacity: 0.9;" data-i18n="nopal.banner.text">
                         Nuestra red de productores nos permite garantizar volumen constante incluso en temporadas de baja producción nacional.
                     </p>
                     <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap;">
                         <div>
                             <span style="display: block; font-size: 2.5rem; font-weight: 700;">+50</span>
-                            <p>Toneladas Semanales</p>
+                            <p data-i18n="nopal.banner.tons">Toneladas Semanales</p>
                         </div>
                         <div>
                             <span style="display: block; font-size: 2.5rem; font-weight: 700;">100%</span>
-                            <p>Trazabilidad</p>
+                            <p data-i18n="nopal.banner.trace">Trazabilidad</p>
                         </div>
                         <div>
                             <span style="display: block; font-size: 2.5rem; font-weight: 700;">24/7</span>
-                            <p>Monitoreo Térmico</p>
+                            <p data-i18n="nopal.banner.monitor">Monitoreo Térmico</p>
                         </div>
                     </div>
                 </div>
@@ -172,25 +175,25 @@
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
                 <img src="nopal.png" alt="Nopal detalle" style="width: 100%; border-radius: 30px; box-shadow: var(--shadow);">
                 <div>
-                    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Formatos de Presentación</h2>
-                    <p style="margin-bottom: 30px; font-size: 1.1rem; color: #555;">Nos adaptamos a las necesidades de su canal de venta, desde granel para procesadores hasta empaques retail listos para anaquel.</p>
+                    <h2 style="font-size: 2.5rem; margin-bottom: 20px;" data-i18n="nopal.formats.title">Formatos de Presentación</h2>
+                    <p style="margin-bottom: 30px; font-size: 1.1rem; color: #555;" data-i18n="nopal.formats.text">Nos adaptamos a las necesidades de su canal de venta, desde granel para procesadores hasta empaques retail listos para anaquel.</p>
                     <ul style="list-style: none;">
                         <li style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 15px;">
                             <i class="fas fa-box" style="color: var(--primary); margin-top: 5px;"></i>
                             <div>
-                                <strong style="display: block; font-size: 1.1rem;">Caja Master (10kg / 20kg)</strong>
-                                <p style="color: #666;">Ideal para mercados de abasto y distribuidores mayoristas.</p>
+                                <strong style="display: block; font-size: 1.1rem;" data-i18n="nopal.formats.master">Caja Master (10kg / 20kg)</strong>
+                                <p style="color: #666;" data-i18n="nopal.formats.masterText">Ideal para mercados de abasto y distribuidores mayoristas.</p>
                             </div>
                         </li>
                         <li style="margin-bottom: 20px; display: flex; align-items: flex-start; gap: 15px;">
                             <i class="fas fa-tags" style="color: var(--primary); margin-top: 5px;"></i>
                             <div>
-                                <strong style="display: block; font-size: 1.1rem;">Empaque Clamshell / Bolsa</strong>
-                                <p style="color: #666;">Presentaciones de 500g o 1kg con su propia marca o marca Yasemi.</p>
+                                <strong style="display: block; font-size: 1.1rem;" data-i18n="nopal.formats.retail">Empaque Clamshell / Bolsa</strong>
+                                <p style="color: #666;" data-i18n="nopal.formats.retailText">Presentaciones de 500g o 1kg con su propia marca o marca Yasemi.</p>
                             </div>
                         </li>
                     </ul>
-                    <a href="FICHA TÉCNICA nopal milpa alta.pdf" target="_blank" class="btn btn-primary" style="margin-top: 20px;">Descargar Ficha Técnica</a>
+                    <a href="FICHA TÉCNICA nopal milpa alta.pdf" target="_blank" class="btn btn-primary" style="margin-top: 20px;" data-i18n="nopal.formats.download">Descargar Ficha Técnica</a>
                 </div>
             </div>
         </div>
@@ -202,25 +205,25 @@
                 <div>
                     <img src="iso-logo.jpeg" alt="Yasemi Logo" style="filter: brightness(0) invert(1); margin-bottom: 20px;">
                     <h3 style="color: white; margin-bottom: 15px;">YASEMI S.A. de C.V.</h3>
-                    <p style="opacity: 0.7;">Líderes en la exportación de productos agrícolas mexicanos de calidad premium.</p>
+                    <p style="opacity: 0.7;" data-i18n="footer.taglineExport">Líderes en la exportación de productos agrícolas mexicanos de calidad premium.</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Productos</h4>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;" data-i18n="footer.products">Productos</h4>
                     <ul style="list-style: none;">
-                        <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;">Aguacate Hass</a></li>
-                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;">Nopal</a></li>
-                        <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;">Compra Segura</a></li>
+                        <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.avocado">Aguacate Hass</a></li>
+                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.nopal">Nopal</a></li>
+                        <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.security">Compra Segura</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Contacto</h4>
-                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i>CDMX, México</p>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;" data-i18n="footer.contact">Contacto</h4>
+                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i><span data-i18n="footer.locationMX">CDMX, México</span></p>
                     <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--secondary);"></i>info@yasemi.com.mx</p>
                     <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fab fa-linkedin" style="margin-right: 10px; color: var(--secondary);"></i>LinkedIn</p>
                 </div>
             </div>
             <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 60px; padding-top: 30px; text-align: center; opacity: 0.5; font-size: 0.9rem;">
-                <p>&copy; 2024 YASEMI S.A. de C.V. Todos los derechos reservados.</p>
+                <p data-i18n="footer.rights2024">&copy; 2024 YASEMI S.A. de C.V. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>

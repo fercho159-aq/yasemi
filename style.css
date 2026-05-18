@@ -134,6 +134,34 @@ nav .container {
     color: var(--primary);
 }
 
+/* Language Toggle Button */
+.lang-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: transparent;
+    border: 1.5px solid var(--primary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: var(--transition);
+    letter-spacing: 0.5px;
+}
+
+.lang-toggle:hover {
+    background: var(--primary);
+    color: var(--white);
+    transform: translateY(-1px);
+}
+
+.lang-toggle i {
+    font-size: 0.95rem;
+}
+
 /* Menu Toggle Button */
 .menu-toggle {
     display: none;

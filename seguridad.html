@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compra Segura | Yasemi S.A. de C.V.</title>
+    <title data-i18n="seg.title">Compra Segura | Yasemi S.A. de C.V.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -92,85 +92,88 @@
             </button>
 
             <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="aguacate.html">Aguacate Hass</a>
-                <a href="nopal.html">Nopal</a>
-                <a href="seguridad.html" style="font-weight: 700;">Compra Segura</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px;">Cotizar</a>
+                <a href="index.html" data-i18n="nav.home">Inicio</a>
+                <a href="aguacate.html" data-i18n="nav.avocado">Aguacate Hass</a>
+                <a href="nopal.html" data-i18n="nav.nopal">Nopal</a>
+                <a href="seguridad.html" style="font-weight: 700;" data-i18n="nav.security">Compra Segura</a>
+                <a href="nosotros.html" data-i18n="nav.about">Nosotros</a>
+                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px;" data-i18n="nav.quote">Cotizar</a>
+                <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+                    <i class="fas fa-globe"></i><span class="lang-toggle-text">EN</span>
+                </button>
             </div>
         </div>
     </nav>
 
     <header class="hero-internal">
         <div class="container">
-            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; font-size: 0.9rem; color: var(--secondary);">Protocolos de Confianza</span>
-            <h1>Transparencia y Garantía en su Compra</h1>
+            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; font-size: 0.9rem; color: var(--secondary);" data-i18n="seg.hero.tag">Protocolos de Confianza</span>
+            <h1 data-i18n="seg.hero.title">Transparencia y Garantía en su Compra</h1>
         </div>
     </header>
 
     <section class="reveal">
         <div class="container" style="max-width: 900px;">
             <div style="text-align: center; margin-bottom: 60px;">
-                <h2 style="font-size: 2.5rem; margin-bottom: 20px;">¿Cómo garantizamos su inversión?</h2>
-                <p style="font-size: 1.2rem; color: #555;">En YASEMI, entendemos que la confianza es la base de cualquier relación comercial a largo plazo. Por ello, hemos implementado protocolos estrictos para cada etapa de la compra.</p>
+                <h2 style="font-size: 2.5rem; margin-bottom: 20px;" data-i18n="seg.intro.title">¿Cómo garantizamos su inversión?</h2>
+                <p style="font-size: 1.2rem; color: #555;" data-i18n="seg.intro.text">En YASEMI, entendemos que la confianza es la base de cualquier relación comercial a largo plazo. Por ello, hemos implementado protocolos estrictos para cada etapa de la compra.</p>
             </div>
 
             <div class="trust-card">
                 <i class="fas fa-file-contract"></i>
-                <h3>Contratación Robusta</h3>
-                <p style="margin-bottom: 25px; font-size: 1.1rem; color: #444;">Nuestras operaciones están respaldadas por contratos internacionales claros, bajo Incoterms 2020, asegurando que ambas partes conozcan sus responsabilidades y riesgos.</p>
-                <div class="checklist-item"><i class="fas fa-check-circle"></i> Asesoría legal especializada</div>
-                <div class="checklist-item"><i class="fas fa-check-circle"></i> Seguros de carga contra todo riesgo</div>
-                <div class="checklist-item"><i class="fas fa-check-circle"></i> Documentación fitosanitaria al día</div>
+                <h3 data-i18n="seg.contract.title">Contratación Robusta</h3>
+                <p style="margin-bottom: 25px; font-size: 1.1rem; color: #444;" data-i18n="seg.contract.text">Nuestras operaciones están respaldadas por contratos internacionales claros, bajo Incoterms 2020, asegurando que ambas partes conozcan sus responsabilidades y riesgos.</p>
+                <div class="checklist-item" data-i18n="seg.contract.i1"><i class="fas fa-check-circle"></i> Asesoría legal especializada</div>
+                <div class="checklist-item" data-i18n="seg.contract.i2"><i class="fas fa-check-circle"></i> Seguros de carga contra todo riesgo</div>
+                <div class="checklist-item" data-i18n="seg.contract.i3"><i class="fas fa-check-circle"></i> Documentación fitosanitaria al día</div>
             </div>
 
             <div class="trust-card">
                 <i class="fas fa-user-shield"></i>
-                <h3>Verificación en Origen</h3>
-                <p style="margin-bottom: 25px; font-size: 1.1rem; color: #444;">Usted tiene la tranquilidad de que el producto es real y cumple con lo prometido antes de que salga del contenedor.</p>
-                <div class="checklist-item"><i class="fas fa-check-circle"></i> Inspección por terceros (SGS / GlobalGAP)</div>
-                <div class="checklist-item"><i class="fas fa-check-circle"></i> Reportes fotográficos y video en tiempo real del empaque</div>
-                <div class="checklist-item"><i class="fas fa-check-circle"></i> Auditoría de lotes por ingenieros agrónomos</div>
+                <h3 data-i18n="seg.verify.title">Verificación en Origen</h3>
+                <p style="margin-bottom: 25px; font-size: 1.1rem; color: #444;" data-i18n="seg.verify.text">Usted tiene la tranquilidad de que el producto es real y cumple con lo prometido antes de que salga del contenedor.</p>
+                <div class="checklist-item" data-i18n="seg.verify.i1"><i class="fas fa-check-circle"></i> Inspección por terceros (SGS / GlobalGAP)</div>
+                <div class="checklist-item" data-i18n="seg.verify.i2"><i class="fas fa-check-circle"></i> Reportes fotográficos y video en tiempo real del empaque</div>
+                <div class="checklist-item" data-i18n="seg.verify.i3"><i class="fas fa-check-circle"></i> Auditoría de lotes por ingenieros agrónomos</div>
             </div>
 
             <div class="trust-card">
                 <i class="fas fa-shield-alt"></i>
-                <h3>Esquema de Fideicomiso (Escrow) Bancario</h3>
-                <p style="margin-bottom: 25px; font-size: 1.1rem; color: #444;">Para erradicar cualquier riesgo de fraude en el sector agrícola, trabajamos bajo un sólido modelo de <strong>Fideicomiso de Garantía (Escrow) con Banorte</strong> como banco fiduciario. Esto protege al 100% los recursos de ambas partes.</p>
-                <div class="checklist-item"><i class="fas fa-check-circle"></i> Fondos resguardados de forma segura en Banorte</div>
-                <div class="checklist-item"><i class="fas fa-check-circle"></i> Liberación de fondos contra confirmación de entrega y calidad</div>
-                <div class="checklist-item"><i class="fas fa-check-circle"></i> Cuentas corporativas fiduciarias plenamente verificadas en México</div>
+                <h3 data-i18n="seg.escrow.title">Esquema de Fideicomiso (Escrow) Bancario</h3>
+                <p style="margin-bottom: 25px; font-size: 1.1rem; color: #444;" data-i18n="seg.escrow.text">Para erradicar cualquier riesgo de fraude en el sector agrícola, trabajamos bajo un sólido modelo de <strong>Fideicomiso de Garantía (Escrow) con Banorte</strong> como banco fiduciario. Esto protege al 100% los recursos de ambas partes.</p>
+                <div class="checklist-item" data-i18n="seg.escrow.i1"><i class="fas fa-check-circle"></i> Fondos resguardados de forma segura en Banorte</div>
+                <div class="checklist-item" data-i18n="seg.escrow.i2"><i class="fas fa-check-circle"></i> Liberación de fondos contra confirmación de entrega y calidad</div>
+                <div class="checklist-item" data-i18n="seg.escrow.i3"><i class="fas fa-check-circle"></i> Cuentas corporativas fiduciarias plenamente verificadas en México</div>
             </div>
         </div>
     </section>
 
     <section class="reveal" style="background: var(--primary); color: white; border-radius: 100px 100px 0 0;">
         <div class="container" style="text-align: center;">
-            <h2 style="color: white; font-size: 3rem; margin-bottom: 30px;">Nuestro Proceso de 4 Pasos</h2>
+            <h2 style="color: white; font-size: 3rem; margin-bottom: 30px;" data-i18n="seg.process.title">Nuestro Proceso de 4 Pasos</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-top: 60px;">
                 <div>
                     <div class="step-badge" style="background: white; color: var(--primary); margin: 0 auto 20px;">1</div>
-                    <h4 style="color: white; margin-bottom: 10px;">Cotización y Muestreo</h4>
-                    <p style="opacity: 0.8; font-size: 0.9rem;">Definimos calibres, volumen y enviamos muestras si es necesario.</p>
+                    <h4 style="color: white; margin-bottom: 10px;" data-i18n="seg.process.s1Title">Cotización y Muestreo</h4>
+                    <p style="opacity: 0.8; font-size: 0.9rem;" data-i18n="seg.process.s1Text">Definimos calibres, volumen y enviamos muestras si es necesario.</p>
                 </div>
                 <div>
                     <div class="step-badge" style="background: white; color: var(--primary); margin: 0 auto 20px;">2</div>
-                    <h4 style="color: white; margin-bottom: 10px;">Fideicomiso y Contrato</h4>
-                    <p style="opacity: 0.8; font-size: 0.9rem;">Formalización legal y apertura de la cuenta Escrow fiduciaria en Banorte.</p>
+                    <h4 style="color: white; margin-bottom: 10px;" data-i18n="seg.process.s2Title">Fideicomiso y Contrato</h4>
+                    <p style="opacity: 0.8; font-size: 0.9rem;" data-i18n="seg.process.s2Text">Formalización legal y apertura de la cuenta Escrow fiduciaria en Banorte.</p>
                 </div>
                 <div>
                     <div class="step-badge" style="background: white; color: var(--primary); margin: 0 auto 20px;">3</div>
-                    <h4 style="color: white; margin-bottom: 10px;">Producción y Empaque</h4>
-                    <p style="opacity: 0.8; font-size: 0.9rem;">Corte fresco y embalaje según especificaciones del cliente.</p>
+                    <h4 style="color: white; margin-bottom: 10px;" data-i18n="seg.process.s3Title">Producción y Empaque</h4>
+                    <p style="opacity: 0.8; font-size: 0.9rem;" data-i18n="seg.process.s3Text">Corte fresco y embalaje según especificaciones del cliente.</p>
                 </div>
                 <div>
                     <div class="step-badge" style="background: white; color: var(--primary); margin: 0 auto 20px;">4</div>
-                    <h4 style="color: white; margin-bottom: 10px;">Distribución y Seguimiento</h4>
-                    <p style="opacity: 0.8; font-size: 0.9rem;">Despacho de carga y liberación segura de fondos fideicomitidos.</p>
+                    <h4 style="color: white; margin-bottom: 10px;" data-i18n="seg.process.s4Title">Distribución y Seguimiento</h4>
+                    <p style="opacity: 0.8; font-size: 0.9rem;" data-i18n="seg.process.s4Text">Despacho de carga y liberación segura de fondos fideicomitidos.</p>
                 </div>
             </div>
-            <a href="nosotros.html#contacto" class="btn" style="margin-top: 60px; background: var(--secondary); color: white; padding: 20px 40px;">Solicitar Auditoría de Compra</a>
+            <a href="nosotros.html#contacto" class="btn" style="margin-top: 60px; background: var(--secondary); color: white; padding: 20px 40px;" data-i18n="seg.process.cta">Solicitar Auditoría de Compra</a>
         </div>
     </section>
 
@@ -180,19 +183,19 @@
                 <div>
                     <img src="iso-logo.jpeg" alt="Yasemi Logo" style="filter: brightness(0) invert(1); margin-bottom: 20px;">
                     <h3 style="color: white; margin-bottom: 15px;">YASEMI S.A. de C.V.</h3>
-                    <p style="opacity: 0.7;">Líderes en el suministro de productos agrícolas mexicanos de calidad premium.</p>
+                    <p style="opacity: 0.7;" data-i18n="footer.taglineSupply">Líderes en el suministro de productos agrícolas mexicanos de calidad premium.</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Productos</h4>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;" data-i18n="footer.products">Productos</h4>
                     <ul style="list-style: none;">
-                        <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;">Aguacate Hass</a></li>
-                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;">Nopal</a></li>
-                        <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;">Compra Segura</a></li>
+                        <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.avocado">Aguacate Hass</a></li>
+                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.nopal">Nopal</a></li>
+                        <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.security">Compra Segura</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Contacto</h4>
-                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i>CDMX, México</p>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;" data-i18n="footer.contact">Contacto</h4>
+                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i><span data-i18n="footer.locationMX">CDMX, México</span></p>
                     <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--secondary);"></i>info@yasemi.com.mx</p>
                 </div>
             </div>

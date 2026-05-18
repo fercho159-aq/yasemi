@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aguacate Hass Premium | Yasemi S.A. de C.V.</title>
+    <title data-i18n="aguacate.title">Aguacate Hass Premium | Yasemi S.A. de C.V.</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
@@ -136,21 +136,24 @@
             </button>
 
             <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="aguacate.html">Aguacate Hass</a>
-                <a href="nopal.html">Nopal</a>
-                <a href="seguridad.html">Compra Segura</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="nosotros.html#contacto" class="btn btn-primary">Cotizar</a>
+                <a href="index.html" data-i18n="nav.home">Inicio</a>
+                <a href="aguacate.html" data-i18n="nav.avocado">Aguacate Hass</a>
+                <a href="nopal.html" data-i18n="nav.nopal">Nopal</a>
+                <a href="seguridad.html" data-i18n="nav.security">Compra Segura</a>
+                <a href="nosotros.html" data-i18n="nav.about">Nosotros</a>
+                <a href="nosotros.html#contacto" class="btn btn-primary" data-i18n="nav.quote">Cotizar</a>
+                <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+                    <i class="fas fa-globe"></i><span class="lang-toggle-text">EN</span>
+                </button>
             </div>
         </div>
     </nav>
 
     <header class="hero-internal">
         <div class="container">
-            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; font-size: 0.9rem; color: var(--secondary);">Calidad de Exportación</span>
-            <h1>Aguacate Hass Premium</h1>
-            <p>El estándar de oro de Michoacán para los mercados más exigentes del mundo.</p>
+            <span style="text-transform: uppercase; letter-spacing: 3px; font-weight: 700; font-size: 0.9rem; color: var(--secondary);" data-i18n="aguacate.hero.tag">Calidad de Exportación</span>
+            <h1 data-i18n="aguacate.hero.title">Aguacate Hass Premium</h1>
+            <p data-i18n="aguacate.hero.subtitle">El estándar de oro de Michoacán para los mercados más exigentes del mundo.</p>
         </div>
     </header>
 
@@ -158,30 +161,30 @@
         <div class="container">
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center;">
                 <div>
-                    <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Especificaciones de Clase Mundial</h2>
-                    <p style="font-size: 1.1rem; color: #555; margin-bottom: 30px;">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 20px;" data-i18n="aguacate.specs.title">Especificaciones de Clase Mundial</h2>
+                    <p style="font-size: 1.1rem; color: #555; margin-bottom: 30px;" data-i18n="aguacate.specs.text">
                         Nuestro proceso de selección garantiza frutos con el punto exacto de madurez, contenido graso superior al 23% y una piel libre de defectos estéticos.
                     </p>
                     <div class="specs-grid">
                         <div class="spec-item">
                             <i class="fas fa-oil-can"></i>
-                            <h4>Contenido Graso</h4>
+                            <h4 data-i18n="aguacate.specs.fat">Contenido Graso</h4>
                             <span>+23%</span>
                         </div>
                         <div class="spec-item">
                             <i class="fas fa-temperature-low"></i>
-                            <h4>Conservación</h4>
+                            <h4 data-i18n="aguacate.specs.preservation">Conservación</h4>
                             <span>5.5°C</span>
                         </div>
                         <div class="spec-item">
                             <i class="fas fa-check-circle"></i>
-                            <h4>Calidad</h4>
+                            <h4 data-i18n="aguacate.specs.quality">Calidad</h4>
                             <span>CAT 1</span>
                         </div>
                     </div>
                 </div>
                 <div style="background: var(--bg-cream); padding: 40px; border-radius: 30px; border: 1px solid #ddd;">
-                    <h3 style="margin-bottom: 25px; text-align: center;">Guía de Calibres (Caja 4kg)</h3>
+                    <h3 style="margin-bottom: 25px; text-align: center;" data-i18n="aguacate.gauge.title">Guía de Calibres (Caja 4kg)</h3>
                     <table class="premium-table">
                         <tr><td>Calibre 32</td><td>311 - 365g</td></tr>
                         <tr><td>Calibre 36</td><td>271 - 310g</td></tr>
@@ -197,33 +200,33 @@
 
     <section class="reveal" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('logistics_hero.png'); background-size: cover; background-position: center; background-attachment: fixed; color: white;">
         <div class="container">
-            <h2 style="text-align: center; margin-bottom: 60px; color: white;">Logística de Alta Precisión</h2>
+            <h2 style="text-align: center; margin-bottom: 60px; color: white;" data-i18n="aguacate.logistics.title">Logística de Alta Precisión</h2>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
                 <div class="logistics-card">
                     <i class="fas fa-ship" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3 style="color: var(--primary);">Marítimo Global</h3>
-                    <p style="color: #444;">Contenedores Reefer de 40 pies con atmósfera controlada para preservar la vida de anaquel hasta por 40 días.</p>
+                    <h3 style="color: var(--primary);" data-i18n="aguacate.logistics.seaTitle">Marítimo Global</h3>
+                    <p style="color: #444;" data-i18n="aguacate.logistics.seaText">Contenedores Reefer de 40 pies con atmósfera controlada para preservar la vida de anaquel hasta por 40 días.</p>
                     <ul style="margin-top: 15px; color: #666; font-size: 0.95rem;">
-                        <li><strong>Capacidad:</strong> 20 - 22 Tarimas</li>
-                        <li><strong>Embalaje:</strong> Cajas de 4kg / 10kg / 18kg</li>
+                        <li data-i18n="aguacate.logistics.seaCap"><strong>Capacidad:</strong> 20 - 22 Tarimas</li>
+                        <li data-i18n="aguacate.logistics.seaPack"><strong>Embalaje:</strong> Cajas de 4kg / 10kg / 18kg</li>
                     </ul>
                 </div>
                 <div class="logistics-card">
                     <i class="fas fa-plane" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3 style="color: var(--primary);">Aéreo Express</h3>
-                    <p style="color: #444;">Máxima frescura para mercados gourmet. Entregas en menos de 48 horas en cualquier aeropuerto principal.</p>
+                    <h3 style="color: var(--primary);" data-i18n="aguacate.logistics.airTitle">Aéreo Express</h3>
+                    <p style="color: #444;" data-i18n="aguacate.logistics.airText">Máxima frescura para mercados gourmet. Entregas en menos de 48 horas en cualquier aeropuerto principal.</p>
                     <ul style="margin-top: 15px; color: #666; font-size: 0.95rem;">
-                        <li><strong>Frecuencia:</strong> Diaria</li>
-                        <li><strong>Control:</strong> Temperatura monitoreada</li>
+                        <li data-i18n="aguacate.logistics.airFreq"><strong>Frecuencia:</strong> Diaria</li>
+                        <li data-i18n="aguacate.logistics.airCtrl"><strong>Control:</strong> Temperatura monitoreada</li>
                     </ul>
                 </div>
                 <div class="logistics-card">
                     <i class="fas fa-truck" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 20px;"></i>
-                    <h3 style="color: var(--primary);">Terrestre Directo</h3>
-                    <p style="color: #444;">Logística puerta a puerta para USA y Canadá. Trazabilidad GPS en tiempo real y cruce fronterizo eficiente.</p>
+                    <h3 style="color: var(--primary);" data-i18n="aguacate.logistics.landTitle">Terrestre Directo</h3>
+                    <p style="color: #444;" data-i18n="aguacate.logistics.landText">Logística puerta a puerta para USA y Canadá. Trazabilidad GPS en tiempo real y cruce fronterizo eficiente.</p>
                     <ul style="margin-top: 15px; color: #666; font-size: 0.95rem;">
-                        <li><strong>Tránsito:</strong> 3-5 días (McAllen / Laredo)</li>
-                        <li><strong>Seguridad:</strong> Certificación C-TPAT</li>
+                        <li data-i18n="aguacate.logistics.landTransit"><strong>Tránsito:</strong> 3-5 días (McAllen / Laredo)</li>
+                        <li data-i18n="aguacate.logistics.landSec"><strong>Seguridad:</strong> Certificación C-TPAT</li>
                     </ul>
                 </div>
             </div>
@@ -232,13 +235,13 @@
 
     <section class="reveal" style="text-align: center;">
         <div class="container">
-            <h2 style="font-size: 2.8rem; margin-bottom: 30px;">Soluciones de Marca Propia</h2>
-            <p style="max-width: 800px; margin: 0 auto 40px; font-size: 1.2rem; color: #555;">
+            <h2 style="font-size: 2.8rem; margin-bottom: 30px;" data-i18n="aguacate.brand.title">Soluciones de Marca Propia</h2>
+            <p style="max-width: 800px; margin: 0 auto 40px; font-size: 1.2rem; color: #555;" data-i18n="aguacate.brand.text">
                 Entendemos que su marca es su activo más valioso. Ofrecemos servicios de personalización total de empaque con diseño de alta gama para que su producto destaque en el anaquel.
             </p>
             <div style="display: flex; justify-content: center; gap: 20px;">
-                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 18px 40px; font-size: 1.1rem;">Hablar con un Experto</a>
-                <a href="AguacateHassYASEMi.pdf" target="_blank" class="btn btn-outline" style="padding: 18px 40px; font-size: 1.1rem;"><i class="fas fa-file-pdf" style="margin-right: 10px;"></i>Ficha Técnica</a>
+                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 18px 40px; font-size: 1.1rem;" data-i18n="aguacate.brand.expert">Hablar con un Experto</a>
+                <a href="AguacateHassYASEMi.pdf" target="_blank" class="btn btn-outline" style="padding: 18px 40px; font-size: 1.1rem;" data-i18n="aguacate.brand.datasheet"><i class="fas fa-file-pdf" style="margin-right: 10px;"></i>Ficha Técnica</a>
             </div>
         </div>
     </section>
@@ -249,25 +252,25 @@
                 <div>
                     <img src="iso-logo.jpeg" alt="Yasemi Logo" style="filter: brightness(0) invert(1); margin-bottom: 20px;">
                     <h3 style="color: white; margin-bottom: 15px;">YASEMI S.A. de C.V.</h3>
-                    <p style="opacity: 0.7;">Líderes en la exportación de productos agrícolas mexicanos de calidad premium.</p>
+                    <p style="opacity: 0.7;" data-i18n="footer.taglineExport">Líderes en la exportación de productos agrícolas mexicanos de calidad premium.</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Productos</h4>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;" data-i18n="footer.products">Productos</h4>
                     <ul style="list-style: none;">
-                        <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;">Aguacate Hass</a></li>
-                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;">Nopal</a></li>
-                        <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;">Compra Segura</a></li>
+                        <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.avocado">Aguacate Hass</a></li>
+                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.nopal">Nopal</a></li>
+                        <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;" data-i18n="nav.security">Compra Segura</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 25px;">Contacto</h4>
-                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i>CDMX, México</p>
+                    <h4 style="color: var(--secondary); margin-bottom: 25px;" data-i18n="footer.contact">Contacto</h4>
+                    <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-map-marker-alt" style="margin-right: 10px; color: var(--secondary);"></i><span data-i18n="footer.locationMX">CDMX, México</span></p>
                     <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fas fa-envelope" style="margin-right: 10px; color: var(--secondary);"></i>info@yasemi.com.mx</p>
                     <p style="margin-bottom: 10px; opacity: 0.8;"><i class="fab fa-linkedin" style="margin-right: 10px; color: var(--secondary);"></i>LinkedIn</p>
                 </div>
             </div>
             <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 60px; padding-top: 30px; text-align: center; opacity: 0.5; font-size: 0.9rem;">
-                <p>&copy; 2024 YASEMI S.A. de C.V. Todos los derechos reservados.</p>
+                <p data-i18n="footer.rights2024">&copy; 2024 YASEMI S.A. de C.V. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
