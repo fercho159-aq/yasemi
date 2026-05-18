@@ -104,7 +104,7 @@
             <div class="nav-links">
                 <a href="index.html">Inicio</a>
                 <a href="aguacate.html">Aguacate Hass</a>
-                <a href="nopal.html">Nopal Verdura</a>
+                <a href="nopal.html">Nopal</a>
                 <a href="seguridad.html">Compra Segura</a>
                 <a href="nosotros.html">Nosotros</a>
                 <a href="nosotros.html#contacto" class="btn btn-primary">Cotizar</a>
@@ -194,7 +194,7 @@
                         <label>Producto de Interés</label>
                         <select style="width: 100%; padding: 15px; margin-bottom: 20px; border-radius: 10px; border: none; background: rgba(255,255,255,0.9); font-family: inherit;">
                             <option>Aguacate Hass</option>
-                            <option>Nopal Verdura</option>
+                            <option>Nopal</option>
                             <option>Ambos</option>
                         </select>
                         
@@ -220,7 +220,7 @@
                     <h4 style="color: var(--secondary); margin-bottom: 25px;">Productos</h4>
                     <ul style="list-style: none;">
                         <li style="margin-bottom: 12px;"><a href="aguacate.html" style="color: white; text-decoration: none; opacity: 0.8;">Aguacate Hass</a></li>
-                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;">Nopal Verdura</a></li>
+                        <li style="margin-bottom: 12px;"><a href="nopal.html" style="color: white; text-decoration: none; opacity: 0.8;">Nopal</a></li>
                         <li style="margin-bottom: 12px;"><a href="seguridad.html" style="color: white; text-decoration: none; opacity: 0.8;">Compra Segura</a></li>
                     </ul>
                 </div>
@@ -238,31 +238,5 @@
     </a>
 
     <script src="main.js"></script>
-    <script>
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('main-nav');
-            if (window.scrollY > 50) {
-                nav.style.background = 'white';
-                nav.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
-                document.querySelectorAll('.nav-links a').forEach(a => a.style.color = '#2C3A27');
-                document.querySelector('.logo').style.filter = 'none';
-                const btn = document.querySelector('.nav-links .btn-primary');
-                if(btn) {
-                    btn.style.background = 'var(--primary)';
-                    btn.style.color = 'white';
-                }
-            } else {
-                nav.style.background = 'transparent';
-                nav.style.boxShadow = 'none';
-                document.querySelectorAll('.nav-links a').forEach(a => a.style.color = 'white');
-                document.querySelector('.logo').style.filter = 'brightness(0) invert(1)';
-                const btn = document.querySelector('.nav-links .btn-primary');
-                if(btn) {
-                    btn.style.background = 'white';
-                    btn.style.color = 'var(--primary)';
-                }
-            }
-        });
-    </script>
 </body>
 </html>
