@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yasemi S.A. de C.V. | Exportación Premium de Aguacate y Nopal</title>
-    <meta name="description" content="Yasemi S.A. de C.V. - Líderes en exportación certificada de Aguacate Hass y Nopal desde Michoacán y Milpa Alta. Suministro garantizado con seguridad Escrow.">
+    <title data-i18n="index.title">Yasemi S.A. de C.V. | Exportación Premium de Aguacate y Nopal</title>
+    <meta name="description" data-i18n="index.metaDesc" content="Yasemi S.A. de C.V. - Líderes en exportación certificada de Aguacate Hass y Nopal desde Michoacán y Milpa Alta. Suministro garantizado con seguridad Escrow.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -18,7 +18,7 @@
         <div class="scroll-line-fill"></div>
     </div>
 
-    <div class="urgency-widget">
+    <div class="urgency-widget" data-i18n="urgency">
 
         <i class="fas fa-clock"></i> Capacidad limitada para nuevas cuentas este mes. Suministro sujeto a disponibilidad de cosecha.
     </div>
@@ -28,31 +28,34 @@
             <a href="index.html" class="logo">
                 <img src="iso-logo.jpeg" alt="Yasemi Logo" style="height: 50px;">
             </a>
-            
+
             <button class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </button>
 
             <div class="nav-links">
-                <a href="index.html">Inicio</a>
-                <a href="aguacate.html">Aguacate Hass</a>
-                <a href="nopal.html">Nopal</a>
-                <a href="seguridad.html">Compra Segura</a>
-                <a href="nosotros.html">Nosotros</a>
-                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px;">Cotizar</a>
+                <a href="index.html" data-i18n="nav.home">Inicio</a>
+                <a href="aguacate.html" data-i18n="nav.avocado">Aguacate Hass</a>
+                <a href="nopal.html" data-i18n="nav.nopal">Nopal</a>
+                <a href="seguridad.html" data-i18n="nav.security">Compra Segura</a>
+                <a href="nosotros.html" data-i18n="nav.about">Nosotros</a>
+                <a href="nosotros.html#contacto" class="btn btn-primary" style="padding: 10px 20px;" data-i18n="nav.quote">Cotizar</a>
+                <button class="lang-toggle" aria-label="Cambiar idioma / Switch language">
+                    <i class="fas fa-globe"></i><span class="lang-toggle-text">EN</span>
+                </button>
             </div>
         </div>
     </nav>
 
     <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('hero-bg.png'); background-size: cover; background-position: center;">
         <div class="container">
-            <h1>Solidez en Exportación Agroindustrial</h1>
-            <p style="font-size: 1.5rem; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            <h1 data-i18n="index.hero.title">Solidez en Exportación Agroindustrial</h1>
+            <p style="font-size: 1.5rem; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;" data-i18n="index.hero.subtitle">
                 Suministro garantizado de Aguacate Hass de exportación y Nopal Premium con trazabilidad total y seguridad financiera.
             </p>
             <div style="display: flex; gap: 20px; justify-content: center;">
-                <a href="#solucion" class="btn btn-primary">Ver Catálogo</a>
-                <a href="seguridad.html" class="btn btn-outline" style="border-color: white; color: white;">Modelo Escrow</a>
+                <a href="#solucion" class="btn btn-primary" data-i18n="index.hero.catalog">Ver Catálogo</a>
+                <a href="seguridad.html" class="btn btn-outline" style="border-color: white; color: white;" data-i18n="index.hero.escrow">Modelo Escrow</a>
             </div>
         </div>
     </section>
@@ -61,19 +64,19 @@
     <div class="horizontal-scroll-wrapper" id="horizontal-wrapper">
         <div class="horizontal-scroll-sticky">
             <div class="horizontal-scroll-track" id="horizontal-track">
-                
+
                 <!-- Módulo 1: Problema -->
                 <div class="h-module">
                     <div class="container" style="max-width: 800px; text-align: center;">
                         <div style="margin-bottom: 40px;">
-                            <h2 style="color: var(--primary); font-size: 2.2rem; line-height: 1.2; margin-bottom: 15px;">¿Cansado de la informalidad?</h2>
-                            <p style="font-size: 1.1rem; color: #444; max-width: 600px; margin: 0 auto;">
+                            <h2 style="color: var(--primary); font-size: 2.2rem; line-height: 1.2; margin-bottom: 15px;" data-i18n="index.mod1.title">¿Cansado de la informalidad?</h2>
+                            <p style="font-size: 1.1rem; color: #444; max-width: 600px; margin: 0 auto;" data-i18n="index.mod1.text">
                                 En el mercado internacional, un proveedor informal destruye tu margen de beneficio y tu reputación. No permitas que la falta de seriedad de terceros afecte tu crecimiento.
                             </p>
                         </div>
                         <div style="background: white; padding: 35px; border-radius: 20px; box-shadow: 0 20px 40px rgba(0,0,0,0.08); border-left: 8px solid var(--accent-brown); text-align: left; max-width: 500px; margin: 0 auto;">
-                            <h3 style="color: var(--accent-brown); font-size: 1.5rem; margin-bottom: 10px;">El riesgo es real</h3>
-                            <p style="font-size: 1rem; line-height: 1.5; color: #555;">La falta de infraestructura resulta en productos que no cumplen estándares fitosanitarios internacionales.</p>
+                            <h3 style="color: var(--accent-brown); font-size: 1.5rem; margin-bottom: 10px;" data-i18n="index.mod1.riskTitle">El riesgo es real</h3>
+                            <p style="font-size: 1rem; line-height: 1.5; color: #555;" data-i18n="index.mod1.riskText">La falta de infraestructura resulta en productos que no cumplen estándares fitosanitarios internacionales.</p>
                         </div>
                     </div>
                 </div>
@@ -81,27 +84,27 @@
                 <!-- Módulo 2: Agitación -->
                 <div class="h-module" style="background: var(--primary); color: white;">
                     <div class="container" style="max-width: 900px;">
-                        <h2 style="color: white; font-size: 2.2rem; margin-bottom: 40px; text-align: center;">No te la juegues con intermediarios</h2>
+                        <h2 style="color: white; font-size: 2.2rem; margin-bottom: 40px; text-align: center;" data-i18n="index.mod2.title">No te la juegues con intermediarios</h2>
                         <div class="responsive-grid">
                             <div style="display: flex; align-items: center; gap: 25px; padding: 25px 30px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
                                 <i class="fas fa-exclamation-triangle" style="font-size: 2rem; color: #ffcc00; flex-shrink: 0; width: 50px; text-align: center;"></i>
                                 <div>
-                                    <h3 style="color: white; font-size: 1.4rem; margin-bottom: 5px;">Rechazos</h3>
-                                    <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.95rem;">Certificaciones mal gestionadas son dinero perdido.</p>
+                                    <h3 style="color: white; font-size: 1.4rem; margin-bottom: 5px;" data-i18n="index.mod2.rejTitle">Rechazos</h3>
+                                    <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.95rem;" data-i18n="index.mod2.rejText">Certificaciones mal gestionadas son dinero perdido.</p>
                                 </div>
                             </div>
                             <div style="display: flex; align-items: center; gap: 25px; padding: 25px 30px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
                                 <i class="fas fa-clock" style="font-size: 2rem; color: #ffcc00; flex-shrink: 0; width: 50px; text-align: center;"></i>
                                 <div>
-                                    <h3 style="color: white; font-size: 1.4rem; margin-bottom: 5px;">Retrasos</h3>
-                                    <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.95rem;">Cada hora de retraso es un día menos de anaquel.</p>
+                                    <h3 style="color: white; font-size: 1.4rem; margin-bottom: 5px;" data-i18n="index.mod2.delTitle">Retrasos</h3>
+                                    <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.95rem;" data-i18n="index.mod2.delText">Cada hora de retraso es un día menos de anaquel.</p>
                                 </div>
                             </div>
                             <div style="display: flex; align-items: center; gap: 25px; padding: 25px 30px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); grid-column: 1 / -1;">
                                 <i class="fas fa-chart-line" style="font-size: 2rem; color: #ffcc00; flex-shrink: 0; width: 50px; text-align: center; transform: rotate(180deg);"></i>
                                 <div>
-                                    <h3 style="color: white; font-size: 1.4rem; margin-bottom: 5px;">Pérdidas Reales</h3>
-                                    <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.95rem;">Los intermediarios sin activos devoran tus ganancias reales en cada paso del proceso logístico.</p>
+                                    <h3 style="color: white; font-size: 1.4rem; margin-bottom: 5px;" data-i18n="index.mod2.lossTitle">Pérdidas Reales</h3>
+                                    <p style="color: rgba(255,255,255,0.9); margin: 0; font-size: 0.95rem;" data-i18n="index.mod2.lossText">Los intermediarios sin activos devoran tus ganancias reales en cada paso del proceso logístico.</p>
                                 </div>
                             </div>
                         </div>
@@ -112,28 +115,28 @@
                 <div class="h-module">
                     <div class="container" style="max-width: 1000px;">
                         <div style="text-align: center; margin-bottom: 40px;">
-                            <h2 style="color: var(--primary); font-size: 2.2rem;">Yasemi: Solución Integral</h2>
-                            <p style="margin: 0 auto; font-size: 1.1rem; color: #555;">Controlamos toda la cadena para garantizar frescura absoluta.</p>
+                            <h2 style="color: var(--primary); font-size: 2.2rem;" data-i18n="index.mod3.title">Yasemi: Solución Integral</h2>
+                            <p style="margin: 0 auto; font-size: 1.1rem; color: #555;" data-i18n="index.mod3.subtitle">Controlamos toda la cadena para garantizar frescura absoluta.</p>
                         </div>
                         <div style="display: flex; flex-direction: column; gap: 25px;">
                             <div class="solution-card">
                                 <img src="avocado.png" style="width: 250px; object-fit: cover; flex-shrink: 0;">
                                 <div style="padding: 25px 40px; display: flex; flex-direction: column; justify-content: center; flex-grow: 1;">
                                     <div style="margin-bottom: 8px;">
-                                        <span style="background: var(--bg-cream); padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; color: var(--primary); letter-spacing: 1px;">EXPORTACIÓN</span>
-                                        <h4 style="font-size: 1.35rem; margin: 4px 0 0 0; color: var(--primary); line-height: 1.1;">Aguacate Hass</h4>
+                                        <span style="background: var(--bg-cream); padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; color: var(--primary); letter-spacing: 1px;" data-i18n="index.mod3.tagExport">EXPORTACIÓN</span>
+                                        <h4 style="font-size: 1.35rem; margin: 4px 0 0 0; color: var(--primary); line-height: 1.1;" data-i18n="index.mod3.avocado">Aguacate Hass</h4>
                                     </div>
-                                    <p style="font-size: 1rem; color: #555; margin: 0; line-height: 1.4;">Calibres 32-70, empaque personalizado y trazabilidad total desde el huerto.</p>
+                                    <p style="font-size: 1rem; color: #555; margin: 0; line-height: 1.4;" data-i18n="index.mod3.avocadoText">Calibres 32-70, empaque personalizado y trazabilidad total desde el huerto.</p>
                                 </div>
                             </div>
                             <div class="solution-card">
                                 <img src="nopal.png" style="width: 250px; object-fit: cover; flex-shrink: 0;">
                                 <div style="padding: 25px 40px; display: flex; flex-direction: column; justify-content: center; flex-grow: 1;">
                                     <div style="margin-bottom: 8px;">
-                                        <span style="background: var(--bg-cream); padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; color: var(--primary); letter-spacing: 1px;">100% NATURAL</span>
-                                        <h4 style="font-size: 1.35rem; margin: 4px 0 0 0; color: var(--primary); line-height: 1.1;">Nopal de Milpa Alta</h4>
+                                        <span style="background: var(--bg-cream); padding: 3px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 700; color: var(--primary); letter-spacing: 1px;" data-i18n="index.mod3.tagNatural">100% NATURAL</span>
+                                        <h4 style="font-size: 1.35rem; margin: 4px 0 0 0; color: var(--primary); line-height: 1.1;" data-i18n="index.mod3.nopal">Nopal de Milpa Alta</h4>
                                     </div>
-                                    <p style="font-size: 1rem; color: #555; margin: 0; line-height: 1.4;">Producción sustentable nacional, cultivo libre de pesticidas con excelente vida post-cosecha.</p>
+                                    <p style="font-size: 1rem; color: #555; margin: 0; line-height: 1.4;" data-i18n="index.mod3.nopalText">Producción sustentable nacional, cultivo libre de pesticidas con excelente vida post-cosecha.</p>
                                 </div>
                             </div>
                         </div>
@@ -143,19 +146,19 @@
                 <!-- Módulo 4: Promesa -->
                 <div class="h-module" style="background: linear-gradient(rgba(75, 111, 68, 0.85), rgba(75, 111, 68, 0.85)), url('hero-bg.png'); background-size: cover; background-position: center; color: white;">
                     <div class="container" style="max-width: 900px;">
-                        <h2 style="color: white; font-size: 2.2rem; text-align: center; margin-bottom: 40px;">Nuestra Promesa de Valor</h2>
+                        <h2 style="color: white; font-size: 2.2rem; text-align: center; margin-bottom: 40px;" data-i18n="index.mod4.title">Nuestra Promesa de Valor</h2>
                         <div style="display: flex; flex-direction: column; gap: 15px;">
                             <div style="display: flex; align-items: center; gap: 30px; padding: 25px 40px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
                                 <i class="fas fa-leaf" style="font-size: 2.5rem; color: #8DA967; flex-shrink: 0; width: 60px; text-align: center;"></i>
-                                <h4 class="promesa-title">Sustentabilidad</h4>
+                                <h4 class="promesa-title" data-i18n="index.mod4.p1">Sustentabilidad</h4>
                             </div>
                             <div style="display: flex; align-items: center; gap: 30px; padding: 25px 40px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
                                 <i class="fas fa-shield-alt" style="font-size: 2.5rem; color: #8DA967; flex-shrink: 0; width: 60px; text-align: center;"></i>
-                                <h4 class="promesa-title">Trazabilidad</h4>
+                                <h4 class="promesa-title" data-i18n="index.mod4.p2">Trazabilidad</h4>
                             </div>
                             <div style="display: flex; align-items: center; gap: 30px; padding: 25px 40px; background: rgba(255,255,255,0.1); border-radius: 20px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2);">
                                 <i class="fas fa-handshake" style="font-size: 2.5rem; color: #8DA967; flex-shrink: 0; width: 60px; text-align: center;"></i>
-                                <h4 class="promesa-title">Trato Justo</h4>
+                                <h4 class="promesa-title" data-i18n="index.mod4.p3">Trato Justo</h4>
                             </div>
                         </div>
                     </div>
@@ -164,8 +167,8 @@
                 <!-- Módulo 5: Trigger -->
                 <div class="h-module" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('logistics_bg.png'); background-size: cover; background-position: center; color: white;">
                     <div class="container" style="text-align: center;">
-                        <h2 style="color: white; font-size: 2.2rem;">El mercado global no espera</h2>
-                        <p style="color: white; margin: 0 auto 40px; font-size: 1.6rem; opacity: 0.9; max-width: 800px;">
+                        <h2 style="color: white; font-size: 2.2rem;" data-i18n="index.mod5.title">El mercado global no espera</h2>
+                        <p style="color: white; margin: 0 auto 40px; font-size: 1.6rem; opacity: 0.9; max-width: 800px;" data-i18n="index.mod5.text">
                             Tu competencia está cerrando contratos de suministro para la próxima temporada. No te quedes fuera de los anaqueles.
                         </p>
                     </div>
@@ -174,7 +177,7 @@
                 <!-- Módulo 6: Certificaciones -->
                 <div class="h-module">
                     <div class="container" style="text-align: center;">
-                        <h2 style="color: var(--primary); font-size: 2.2rem; margin-bottom: 60px;">Calidad Avalada Internacionalmente</h2>
+                        <h2 style="color: var(--primary); font-size: 2.2rem; margin-bottom: 60px;" data-i18n="index.mod6.title">Calidad Avalada Internacionalmente</h2>
                         <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 40px; opacity: 0.8; width: 100%;">
                             <div style="text-align: center;">
                                 <i class="fas fa-certificate" style="font-size: 4rem; color: var(--primary); margin-bottom: 20px;"></i>
@@ -206,8 +209,8 @@
     <section style="background: #e9e6d5; padding: 100px 0;">
 
         <div class="container" style="text-align: center;">
-            <h2 style="margin-bottom: 40px;">Confianza de Exportación</h2>
-            <p>Nuestra infraestructura nos permite procesar y empacar con estándares de clase mundial.</p>
+            <h2 style="margin-bottom: 40px;" data-i18n="index.testimonial.title">Confianza de Exportación</h2>
+            <p data-i18n="index.testimonial.text">Nuestra infraestructura nos permite procesar y empacar con estándares de clase mundial.</p>
         </div>
     </section>
 
@@ -216,17 +219,17 @@
 
         <div class="container">
             <div style="background: var(--accent-brown); color: white; padding: 60px; border-radius: 30px; text-align: center;">
-                <h2 style="color: white; font-size: 2.5rem; margin-bottom: 20px;">Capacidad de Suministro Global</h2>
-                <p style="font-size: 1.2rem; margin-bottom: 40px;">Hasta 15,000 toneladas mensuales con empaque de marca privada y logística integrada.</p>
+                <h2 style="color: white; font-size: 2.5rem; margin-bottom: 20px;" data-i18n="index.offer.title">Capacidad de Suministro Global</h2>
+                <p style="font-size: 1.2rem; margin-bottom: 40px;" data-i18n="index.offer.text">Hasta 15,000 toneladas mensuales con empaque de marca privada y logística integrada.</p>
                 <div style="display: flex; justify-content: center; gap: 20px;">
                     <div style="border: 1px solid rgba(255,255,255,0.3); padding: 20px; border-radius: 10px;">
                     <div style="border: 1px solid rgba(255,255,255,0.3); padding: 15px; border-radius: 10px;">
                         <span style="font-size: 1.8rem; font-weight: 800; display: block;">15k</span>
-                        Toneladas / Mes
+                        <span data-i18n="index.offer.tons">Toneladas / Mes</span>
                     </div>
                     <div style="border: 1px solid rgba(255,255,255,0.3); padding: 15px; border-radius: 10px;">
                         <span style="font-size: 1.8rem; font-weight: 800; display: block;">20+</span>
-                        Días de Anaquel
+                        <span data-i18n="index.offer.shelf">Días de Anaquel</span>
                     </div>
                 </div>
             </div>
@@ -237,9 +240,9 @@
     <section id="contacto" class="reveal" style="background: white;">
 
         <div class="container" style="text-align: center;">
-            <h2 style="font-size: 2.5rem; margin-bottom: 20px;">Inicie su Operación de Importación</h2>
-            <p style="margin-bottom: 40px;">Nuestro equipo técnico le contactará en menos de 24 horas.</p>
-            <a href="nosotros.html#contacto" class="btn btn-primary" style="font-size: 1.2rem; padding: 20px 40px;">Solicitar Cotización de Exportación</a>
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px;" data-i18n="index.cta.title">Inicie su Operación de Importación</h2>
+            <p style="margin-bottom: 40px;" data-i18n="index.cta.text">Nuestro equipo técnico le contactará en menos de 24 horas.</p>
+            <a href="nosotros.html#contacto" class="btn btn-primary" style="font-size: 1.2rem; padding: 20px 40px;" data-i18n="index.cta.btn">Solicitar Cotización de Exportación</a>
         </div>
     </section>
 
@@ -249,23 +252,23 @@
                 <div>
                     <img src="iso-logo.jpeg" alt="Yasemi Logo">
                     <h3 style="color: white; margin-bottom: 10px;">YASEMI S.A. de C.V.</h3>
-                    <p>Exportación agroindustrial de alto impacto.</p>
+                    <p data-i18n="footer.tagline">Exportación agroindustrial de alto impacto.</p>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 15px;">Enlaces</h4>
+                    <h4 style="color: var(--secondary); margin-bottom: 15px;" data-i18n="footer.links">Enlaces</h4>
                     <ul style="list-style: none;">
-                        <li><a href="aguacate.html" style="color: white; text-decoration: none;">Aguacate Hass</a></li>
-                        <li><a href="nopal.html" style="color: white; text-decoration: none;">Nopal</a></li>
-                        <li><a href="seguridad.html" style="color: white; text-decoration: none;">Compra Segura</a></li>
+                        <li><a href="aguacate.html" style="color: white; text-decoration: none;" data-i18n="nav.avocado">Aguacate Hass</a></li>
+                        <li><a href="nopal.html" style="color: white; text-decoration: none;" data-i18n="nav.nopal">Nopal</a></li>
+                        <li><a href="seguridad.html" style="color: white; text-decoration: none;" data-i18n="nav.security">Compra Segura</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 style="color: var(--secondary); margin-bottom: 15px;">Contacto</h4>
-                    <p>CDMX, Colonia Cuauhtémoc</p>
+                    <h4 style="color: var(--secondary); margin-bottom: 15px;" data-i18n="footer.contact">Contacto</h4>
+                    <p data-i18n="footer.locationCDMX">CDMX, Colonia Cuauhtémoc</p>
                     <p>info@yasemi.com.mx</p>
                 </div>
             </div>
-            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px; padding-top: 20px; text-align: center; font-size: 0.9rem;">
+            <div style="border-top: 1px solid rgba(255,255,255,0.1); margin-top: 50px; padding-top: 20px; text-align: center; font-size: 0.9rem;" data-i18n="footer.rights2026">
                 &copy; 2026 Yasemi S.A. de C.V. Todos los derechos reservados.
             </div>
         </div>
