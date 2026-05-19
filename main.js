@@ -97,6 +97,16 @@ const translations = {
         'aguacate.brand.text': 'Entendemos que su marca es su activo más valioso. Ofrecemos servicios de personalización total de empaque con diseño de alta gama para que su producto destaque en el anaquel.',
         'aguacate.brand.expert': 'Hablar con un Experto',
         'aguacate.brand.datasheet': '<i class="fas fa-file-pdf" style="margin-right: 10px;"></i>Ficha Técnica',
+        'aguacate.formats.title': 'Formatos de Empaque y Presentación',
+        'aguacate.formats.tag1': 'Supermercado',
+        'aguacate.formats.f1Title': 'Retail Premium (Caja 4kg)',
+        'aguacate.formats.f1Text': 'Diseñada para una estiba óptima y protección máxima. Frutos colocados individualmente en bandejas (alvéolos) para evitar fricciones. Calibres seleccionados del 32 al 70.',
+        'aguacate.formats.tag2': 'Volumen',
+        'aguacate.formats.f2Title': 'Foodservice / Industrial (10kg & 18kg)',
+        'aguacate.formats.f2Text': 'Cajas de cartón corrugado de doble pared de alta resistencia estructural (40 lbs para Norteamérica). Ideal para distribuidores mayoristas, restaurantes y plantas procesadoras.',
+        'aguacate.formats.tag3': 'Consumo Rápido',
+        'aguacate.formats.f3Title': 'Bolsas de Malla (Mesh Bags)',
+        'aguacate.formats.f3Text': 'Presentaciones retail listas para anaquel de 1kg y 2kg en bolsas de malla tejida de alta ventilación, con bandas de etiquetado personalizables de marca propia.',
 
         // =============== NOPAL ===============
         'nopal.title': 'Nopal Premium | Yasemi S.A. de C.V.',
@@ -123,6 +133,8 @@ const translations = {
         'nopal.formats.masterText': 'Ideal para mercados de abasto y distribuidores mayoristas.',
         'nopal.formats.retail': 'Empaque Clamshell / Bolsa',
         'nopal.formats.retailText': 'Presentaciones de 500g o 1kg con su propia marca o marca Yasemi.',
+        'nopal.formats.foodservice': 'Nopal Picado / Procesado (Foodservice)',
+        'nopal.formats.foodserviceText': 'Formatos listos para cocinar en bolsas al vacío de 2kg y 5kg, ideal para comedores y restaurantes.',
         'nopal.formats.download': 'Descargar Ficha Técnica',
 
         // =============== SEGURIDAD ===============
@@ -280,6 +292,16 @@ const translations = {
         'aguacate.brand.text': 'We understand that your brand is your most valuable asset. We offer full packaging customization services with high-end design so your product stands out on the shelf.',
         'aguacate.brand.expert': 'Talk to an Expert',
         'aguacate.brand.datasheet': '<i class="fas fa-file-pdf" style="margin-right: 10px;"></i>Technical Datasheet',
+        'aguacate.formats.title': 'Packaging and Presentation Formats',
+        'aguacate.formats.tag1': 'Supermarket',
+        'aguacate.formats.f1Title': 'Retail Premium (4kg Box)',
+        'aguacate.formats.f1Text': 'Designed for optimal palletizing and maximum protection. Fruits placed individually in trays (alveoli) to avoid friction. Selected sizes from 32 to 70.',
+        'aguacate.formats.tag2': 'Volume',
+        'aguacate.formats.f2Title': 'Foodservice / Industrial (10kg & 18kg)',
+        'aguacate.formats.f2Text': 'High structural strength double-walled corrugated cardboard boxes (40 lbs for North America). Ideal for wholesale distributors, restaurants, and processing plants.',
+        'aguacate.formats.tag3': 'Fast Consumption',
+        'aguacate.formats.f3Title': 'Mesh Bags',
+        'aguacate.formats.f3Text': 'Retail shelf-ready presentations of 1kg and 2kg in high-ventilation woven mesh bags, with customizable private label bands.',
 
         // =============== NOPAL ===============
         'nopal.title': 'Premium Nopal | Yasemi S.A. de C.V.',
@@ -306,6 +328,8 @@ const translations = {
         'nopal.formats.masterText': 'Ideal for wholesale markets and major distributors.',
         'nopal.formats.retail': 'Clamshell / Bag Packaging',
         'nopal.formats.retailText': '500g or 1kg presentations with your own brand or the Yasemi brand.',
+        'nopal.formats.foodservice': 'Chopped / Processed Nopal (Foodservice)',
+        'nopal.formats.foodserviceText': 'Ready-to-cook formats in 2kg and 5kg vacuum bags, ideal for cafeterias and restaurants.',
         'nopal.formats.download': 'Download Datasheet',
 
         // =============== SEGURIDAD ===============
