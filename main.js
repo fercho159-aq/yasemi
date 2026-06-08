@@ -24,7 +24,7 @@ const translations = {
         'footer.rights2026': '© 2026 Yasemi S.A. de C.V. Todos los derechos reservados.',
         'footer.rights2024': '© 2024 YASEMI S.A. de C.V. Todos los derechos reservados.',
         'footer.locationCDMX': 'Río Misisipi 49, Piso 14, Interior 1402, Colonia Cuauhtémoc, Alcaldía Cuauhtémoc, Ciudad de México, C.P. 06500.',
-        'footer.locationMX': 'CDMX, México',
+        'footer.locationMX': 'Río Misisipi 49, Piso 14, Interior 1402, Colonia Cuauhtémoc, Alcaldía Cuauhtémoc, Ciudad de México, C.P. 06500.',
 
         // =============== INDEX ===============
         'index.title': 'Yasemi S.A. de C.V. | Exportación Premium de Aguacate y Nopal',
@@ -259,7 +259,7 @@ const translations = {
         'footer.rights2026': '© 2026 Yasemi S.A. de C.V. All rights reserved.',
         'footer.rights2024': '© 2024 YASEMI S.A. de C.V. All rights reserved.',
         'footer.locationCDMX': 'Rio Misisipi 49, Floor 14, Apt 1402, Colonia Cuauhtemoc, Mexico City, 06500.',
-        'footer.locationMX': 'Mexico City, Mexico',
+        'footer.locationMX': 'Rio Misisipi 49, Floor 14, Apt 1402, Colonia Cuauhtemoc, Mexico City, 06500.',
 
         // =============== INDEX ===============
         'index.title': 'Yasemi S.A. de C.V. | Premium Avocado and Nopal Export',
